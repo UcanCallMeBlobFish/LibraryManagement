@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,7 +25,7 @@ namespace Infrastructure
             options.UseSqlServer(configuration.GetConnectionString("LibraryDatabase")));
 
 
-
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IAlertRepository, AlertRepository>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();

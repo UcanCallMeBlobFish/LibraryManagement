@@ -1,4 +1,5 @@
 ﻿using Application.Abstractions;
+using AutoMapper;
 using Infrastructure.LibraryData;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,7 @@ namespace Infrastructure.Repositories
         public ICheckOutRepository CheckOuts { get; }
         public ICustomerRepository Customers { get; }
         public IEditorRepository Editors { get; }
+        public IMapper Mapper { get; }
 
         public UnitOfWork(LibraryDbContext context,
                           IAlertRepository alerts,
@@ -31,7 +33,8 @@ namespace Infrastructure.Repositories
                           ICategoryRepository categories,
                           ICheckOutRepository checkOuts,
                           ICustomerRepository customers,
-                          IEditorRepository editors)
+                          IEditorRepository editors,
+                          IMapper mapper)
         {
             _context = context;
             Alerts = alerts;
@@ -43,6 +46,7 @@ namespace Infrastructure.Repositories
             CheckOuts = checkOuts;
             Customers = customers;
             Editors = editors;
+            Mapper = mapper;
         }
 
 
