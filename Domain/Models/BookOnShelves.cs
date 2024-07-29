@@ -21,6 +21,9 @@ namespace Domain.Models
 
         public Book Book { get; set; }
         public Editor Editor { get; set; }
+
+        public ICollection<Checkout> Checkouts { get; set; }
+
     }
 
 }

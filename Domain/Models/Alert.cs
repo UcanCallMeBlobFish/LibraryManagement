@@ -9,7 +9,11 @@ namespace Domain.Models
     public class Alert
     {
         public int AlertId { get; set; }
+
+        //fk
         public string UserTo { get; set; }
+        public Customer User { get; set; }
+
         public DateTime SentDate { get; set; }
         public string Subject { get; set; }
         public string Text { get; set; }

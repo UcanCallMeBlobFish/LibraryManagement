@@ -16,6 +16,8 @@ namespace Domain.Models
 
         //nav
         public ICollection<Checkout> Checkouts { get; set; }
+        public ICollection<Alert> Alerts { get; set; }
+
 
     }
 
