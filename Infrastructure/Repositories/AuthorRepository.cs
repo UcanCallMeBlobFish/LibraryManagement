@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
-    public class AuthorRepository : GenericRepository<Author>, IGenericRepository<Author>
+    public class AuthorRepository : GenericRepository<Author>, IAuthorRepository
     {
         public AuthorRepository(LibraryDbContext context) : base(context)
         {

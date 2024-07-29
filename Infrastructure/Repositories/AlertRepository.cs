@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
-    public class AlertRepository : GenericRepository<Alert>, IGenericRepository<Alert>
+    public class AlertRepository : GenericRepository<Alert>, IAlertRepository
     {
         public AlertRepository(LibraryDbContext context) : base(context)
         {

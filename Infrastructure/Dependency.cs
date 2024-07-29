@@ -1,4 +1,6 @@
-﻿using Infrastructure.LibraryData;
+﻿using Application.Abstractions;
+using Infrastructure.LibraryData;
+using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,12 +16,27 @@ namespace Infrastructure
     {
         public static IServiceCollection AddPersistenceService(this IServiceCollection services, IConfiguration configuration)
         {
+            
 
 
 
-                    services.AddDbContext<LibraryDbContext>(options =>
+            services.AddDbContext<LibraryDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("LibraryDatabase")));
 
+
+
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IAlertRepository, AlertRepository>();
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
+            services.AddScoped<IBookAuthorRepository, BookAuthorRepository>();
+            services.AddScoped<IBookOnShelfRepository, BookOnShelfRepository>();
+            services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ICheckOutRepository, CheckOutRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IEditorRepository, EditorRepository>();
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;
         }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
-    public class CheckOutRepository : GenericRepository<Checkout>, IGenericRepository<Checkout>
+    public class CheckOutRepository : GenericRepository<Checkout>, ICheckOutRepository
     {
         public CheckOutRepository(LibraryDbContext context) : base(context)
         {

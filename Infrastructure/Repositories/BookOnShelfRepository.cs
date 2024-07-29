@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
-    public class BookOnShelfRepository : GenericRepository<BookOnShelves>, IGenericRepository<BookOnShelves>
+    public class BookOnShelfRepository : GenericRepository<BookOnShelves>, IBookOnShelfRepository
     {
         public BookOnShelfRepository(LibraryDbContext context) : base(context)
         {
