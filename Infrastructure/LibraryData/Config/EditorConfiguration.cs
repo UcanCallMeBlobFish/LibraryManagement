@@ -13,7 +13,7 @@ namespace Infrastructure.LibraryData.Config
     {
         public void Configure(EntityTypeBuilder<Editor> builder)
         {
-            builder.HasKey(e => e.EditorId);
+            builder.HasKey(e => e.Id);
 
             builder.Property(e => e.EditorName)
                 .IsRequired();

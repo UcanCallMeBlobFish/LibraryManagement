@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Domain.Models.Base;
 using Domain.Models.Enums;
 
 namespace Domain.Models
 {
-    public class BookOnShelves
+    public class BookOnShelves:BaseEntity
     {
-        public int Id { get; set; }
         public string Edition { get; set; }
         public ConditionEnum Condition { get; set; }
         public string UserNote { get; set; }

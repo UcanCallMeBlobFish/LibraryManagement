@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Models.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    public class Alert
+    public class Alert : BaseEntity
     {
-        public int AlertId { get; set; }
 
+      
         //fk
         public string UserTo { get; set; }
         public Customer User { get; set; }

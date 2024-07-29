@@ -18,3 +18,5 @@ C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\bin\Debug\net8.0\D
 C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date
 C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\bin\Debug\net8.0\appsettings.json
+C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\bin\Debug\net8.0\Application.dll
+C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\bin\Debug\net8.0\Application.pdb

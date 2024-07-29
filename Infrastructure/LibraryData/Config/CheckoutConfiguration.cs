@@ -13,11 +13,11 @@ namespace Infrastructure.LibraryData.Config
     {
         public void Configure(EntityTypeBuilder<Checkout> builder)
         {
-            builder.HasKey(c => c.CheckoutId);
+            builder.HasKey(c => c.Id);
 
             builder.HasIndex(a => a.CustomerId);
 
-            builder.HasIndex(a => a.CheckoutId);
+            builder.HasIndex(a => a.Id);
 
             builder.Property(c => c.CustomerId)
                 .IsRequired();

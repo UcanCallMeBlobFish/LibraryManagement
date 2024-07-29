@@ -13,7 +13,7 @@ namespace Infrastructure.LibraryData.Config
     {
         public void Configure(EntityTypeBuilder<Book> builder)
         {
-            builder.HasKey(b => b.BookId);
+            builder.HasKey(b => b.Id);
 
             builder.Property(b => b.Title).HasMaxLength(100);
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Models.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    public class Checkout
+    public class Checkout: BaseEntity
     {
-        public int CheckoutId { get; set; }
+
         public bool IsReturned { get; set; }
         public DateTime CheckoutDate { get; set; }
         public DateTime? ReturnDate { get; set; }

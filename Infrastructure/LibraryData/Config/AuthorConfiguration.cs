@@ -14,7 +14,7 @@ namespace Infrastructure.LibraryData.Config
     {
         public void Configure(EntityTypeBuilder<Author> builder)
         {
-            builder.HasKey(a => a.AuthorId);
+            builder.HasKey(a => a.Id);
 
             builder.Property(a => a.Name)
                 .IsRequired()

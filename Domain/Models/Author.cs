@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Models.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Models
 {
-    public class Author
+    public class Author: BaseEntity
     {
-        public int AuthorId { get; set; }
         public string Name { get; set; }
+      
 
 
         public ICollection<BookAuthor> bookAuthors  { get; set; }

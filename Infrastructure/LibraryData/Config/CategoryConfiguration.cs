@@ -14,7 +14,7 @@ namespace Infrastructure.LibraryData.Config
         public void Configure(EntityTypeBuilder<Category> builder)
         {
 
-            builder.HasKey(a => a.CategoryId);
+            builder.HasKey(a => a.Id);
 
             builder.HasMany(a => a.Books)
                 .WithOne(c => c.Category)

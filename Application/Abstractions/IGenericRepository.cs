@@ -7,13 +7,16 @@ using System.Threading.Tasks;
 
 namespace Application.Abstractions
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<T>
     {
-        Task<T> GetByIdAsync(int id);
-        Task<IEnumerable<T>> GetAllAsync();
-        Task AddAsync(T entity);
-        Task UpdateAsync(T entity);
-        Task DeleteAsync(Guid id);
+        Task<T> Get(int id);
+        Task<IReadOnlyList<T>> GetAll();
+
+        Task<T> Add(T entity);
+        Task Update(T Entity);
+
+        Task Delete(T Entity);
+
 
     }
 }

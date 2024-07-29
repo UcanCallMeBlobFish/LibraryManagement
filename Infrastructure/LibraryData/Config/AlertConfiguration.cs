@@ -13,7 +13,7 @@ namespace Infrastructure.LibraryData.Config
     {
         public void Configure(EntityTypeBuilder<Alert> builder)
         {
-            builder.HasKey(a => a.AlertId);
+            builder.HasKey(a => a.Id);
 
             builder.Property(a => a.UserTo).IsRequired();
 
