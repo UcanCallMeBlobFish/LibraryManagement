@@ -1,0 +1,25 @@
+# Ignore Visual Studio specific files
+.vs/
+*.user
+*.suo
+*.csproj.user
+*.ncb
+*.sdf
+*.opensdf
+*.cache
+*.dbmdl
+*.pdb
+*.log
+*.tmp
+
+# Ignore build directories
+bin/
+obj/
+
+# Ignore other common files
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
