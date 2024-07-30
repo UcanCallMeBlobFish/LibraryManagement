@@ -31,6 +31,8 @@ This project is a **Library Management System** built using **.NET**, following 
 - **ASP.NET Core Web API**
 - **Identity Framework**
 - **JWT Authentication**
+-  **NLog**
+
 
 ## Getting Started
 
