@@ -8,11 +8,10 @@ namespace Application.Mapper
     {
         public AlertMappingProfile()
         {
-            CreateMap<Alert, AlertDto>();
-
-            CreateMap<AlertCreateDto, Alert>();
-            CreateMap<AlertUpdateDto, Alert>();
-            CreateMap<AlertDeleteDto, Alert>();
+            CreateMap<Alert, AlertDto>().ReverseMap();
+            CreateMap<Alert, AlertCreateDto>().ReverseMap();
+            CreateMap<Alert, AlertUpdateDto>().ReverseMap();
+            CreateMap<Alert, AlertDeleteDto>().ReverseMap();
         }
     }
 }

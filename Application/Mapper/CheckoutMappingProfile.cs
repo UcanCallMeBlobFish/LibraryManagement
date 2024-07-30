@@ -8,13 +8,10 @@ namespace Application.Mapper
     {
         public CheckoutMappingProfile()
         {
-            CreateMap<Checkout, CheckoutDto>();
-            CreateMap<CheckoutDto, Checkout>();
-
-
-            CreateMap<CheckoutCreateDto, Checkout>();
-            CreateMap<CheckoutUpdateDto, Checkout>();
-            CreateMap<CheckoutDeleteDto, Checkout>();
+            CreateMap<Checkout, CheckoutDto>().ReverseMap();
+            CreateMap<CheckoutCreateDto, Checkout>().ReverseMap();
+            CreateMap<CheckoutUpdateDto, Checkout>().ReverseMap();
+            CreateMap<CheckoutDeleteDto, Checkout>().ReverseMap();
         }
     }
 }

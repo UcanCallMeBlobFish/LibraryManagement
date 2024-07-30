@@ -9,11 +9,11 @@ namespace Application.Mapper
         public AuthorMappingProfile()
         {
             CreateMap<Author, AuthorDto>()
-                .ForMember(dest => dest.BookAuthorIds, opt => opt.MapFrom(src => src.bookAuthors.Select(ba => ba.Id)));
+                .ForMember(dest => dest.BookAuthorIds, opt => opt.MapFrom(src => src.bookAuthors.Select(ba => ba.Id))).ReverseMap();
 
-            CreateMap<AuthorCreateDto, Author>();
-            CreateMap<AuthorUpdateDto, Author>();
-            CreateMap<AuthorDeleteDto, Author>();
+            CreateMap<AuthorCreateDto, Author>().ReverseMap();
+            CreateMap<AuthorUpdateDto, Author>().ReverseMap();
+            CreateMap<AuthorDeleteDto, Author>().ReverseMap();
         }
     }
 }

@@ -9,5 +9,7 @@ namespace Application.Abstractions
 {
     public interface ICustomerRepository : IGenericRepository<Customer>
     {
+        Task<Customer> Get(string id);
+
     }
 }

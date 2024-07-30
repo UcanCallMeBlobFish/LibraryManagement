@@ -9,11 +9,12 @@ namespace Application.Mapper
         public CategoryMappingProfile()
         {
             CreateMap<Category, CategoryDto>()
-                .ForMember(dest => dest.BookIds, opt => opt.MapFrom(src => src.Books.Select(b => b.Id)));
+                .ForMember(dest => dest.BookIds, opt => opt.MapFrom(src => src.Books.Select(b => b.Id)))
+                .ReverseMap();
 
-            CreateMap<CategoryCreateDto, Category>();
-            CreateMap<CategoryUpdateDto, Category>();
-            CreateMap<CategoryDeleteDto, Category>();
+            CreateMap<CategoryCreateDto, Category>().ReverseMap();
+            CreateMap<CategoryUpdateDto, Category>().ReverseMap();
+            CreateMap<CategoryDeleteDto, Category>().ReverseMap();
         }
     }
 }

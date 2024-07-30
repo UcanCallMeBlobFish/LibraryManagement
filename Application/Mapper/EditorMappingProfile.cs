@@ -1,11 +1,7 @@
 ﻿using Application.DTOs;
 using AutoMapper;
 using Domain.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Mapper
 {
@@ -14,11 +10,12 @@ namespace Application.Mapper
         public EditorMappingProfile()
         {
             CreateMap<Editor, EditorDto>()
-                .ForMember(dest => dest.BookOnShelvesIds, opt => opt.MapFrom(src => src.bookOnShelves.Select(b => b.Id)));
+                .ForMember(dest => dest.BookOnShelvesIds, opt => opt.MapFrom(src => src.bookOnShelves.Select(b => b.Id)))
+                .ReverseMap();
 
-            CreateMap<EditorCreateDto, Editor>();
-            CreateMap<EditorUpdateDto, Editor>();
-            CreateMap<EditorDeleteDto, Editor>();
+            CreateMap<EditorCreateDto, Editor>().ReverseMap();
+            CreateMap<EditorUpdateDto, Editor>().ReverseMap();
+            CreateMap<EditorDeleteDto, Editor>().ReverseMap();
         }
     }
 }

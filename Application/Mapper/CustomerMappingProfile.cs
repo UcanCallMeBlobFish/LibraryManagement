@@ -10,11 +10,12 @@ namespace Application.Mapper
         {
             CreateMap<Customer, CustomerDto>()
                 .ForMember(dest => dest.CheckoutIds, opt => opt.MapFrom(src => src.Checkouts.Select(c => c.Id)))
-                .ForMember(dest => dest.AlertIds, opt => opt.MapFrom(src => src.Alerts.Select(a => a.Id)));
+                .ForMember(dest => dest.AlertIds, opt => opt.MapFrom(src => src.Alerts.Select(a => a.Id)))
+                .ReverseMap();
 
-            CreateMap<CustomerCreateDto, Customer>();
-            CreateMap<CustomerUpdateDto, Customer>();
-            CreateMap<CustomerDeleteDto, Customer>();
+            CreateMap<CustomerCreateDto, Customer>().ReverseMap();
+            CreateMap<CustomerUpdateDto, Customer>().ReverseMap();
+            CreateMap<CustomerDeleteDto, Customer>().ReverseMap();
         }
     }
 }
