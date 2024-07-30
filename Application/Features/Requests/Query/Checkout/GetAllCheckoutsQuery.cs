@@ -2,7 +2,7 @@
 using Application.DTOs;
 
 
-namespace Application.Features.Requests.Query.Category
+namespace Application.Features.Requests.Query.Checkout
 {
     public record GetAllCheckoutsQuery() : IRequest<IEnumerable<CheckoutDto>>;
 

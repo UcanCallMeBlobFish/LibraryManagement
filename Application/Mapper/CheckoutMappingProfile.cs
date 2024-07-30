@@ -9,6 +9,8 @@ namespace Application.Mapper
         public CheckoutMappingProfile()
         {
             CreateMap<Checkout, CheckoutDto>();
+            CreateMap<CheckoutDto, Checkout>();
+
 
             CreateMap<CheckoutCreateDto, Checkout>();
             CreateMap<CheckoutUpdateDto, Checkout>();

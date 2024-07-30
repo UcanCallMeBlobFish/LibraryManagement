@@ -2,17 +2,25 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Infrastructure; // Namespace for  AddPersistenceService extension method
+using NLog;
+using NLog.Web;
+using Infrastructure;
+using Application;
+using NLog.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure NLog
+LogManager.LoadConfiguration("NLog.config");
+
+builder.Logging.ClearProviders(); // Remove other logging providers
+builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace); // Set minimum log level
+builder.Logging.AddNLog(); // Add NLog as the logging provider
+
 // Add services to the container
-builder.Services.AddControllers();
-
-// Configure Entity Framework Core with LibraryDbContext
+builder.Services.ConfigureApplicationServices();
 builder.Services.AddPersistenceService(builder.Configuration);
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -26,9 +34,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();

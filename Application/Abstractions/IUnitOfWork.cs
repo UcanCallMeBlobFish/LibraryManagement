@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,8 @@ namespace Application.Abstractions
         ICheckOutRepository CheckOuts { get; }
         ICustomerRepository Customers { get; }
         IEditorRepository Editors { get; }
+        IMapper Mapper { get; }
+
         IGenericRepository<TEntity> Repository<TEntity>() where TEntity : class;
 
         Task<int> SaveAsync();

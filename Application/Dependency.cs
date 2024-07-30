@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using AutoMapper;
+using Microsoft.Extensions.Logging;
+using NLog;
+using NLog.Extensions.Logging;
 using System.Reflection;
 
 namespace Application
@@ -8,8 +10,19 @@ namespace Application
     {
         public static IServiceCollection ConfigureApplicationServices(this IServiceCollection services)
         {
-            // Scan the assembly for classes that inherit from Profile and register them
+            // Register AutoMapper
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+            // Register logging
+            services.AddLogging(loggingBuilder =>
+            {
+                loggingBuilder.ClearProviders(); // Remove all other logging providers
+                loggingBuilder.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace); // Set the minimum log level
+                loggingBuilder.AddNLog(); // Add NLog as the logging provider
+            });
+
+            // Configure NLog
+            LogManager.LoadConfiguration("NLog.config");
 
             return services;
         }

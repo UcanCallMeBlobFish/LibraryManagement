@@ -14,3 +14,4 @@ C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\bin\Debug\net8.0\Doma
 C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
 C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\obj\Debug\net8.0\Application.sourcelink.json
 C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\bin\Debug\net8.0\NLog.config
