@@ -1,6 +1,7 @@
 ﻿using Domain.Models.Base;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,12 @@ namespace Domain.Models
 
 
         //fk
+
         public string CustomerId { get; set; }
 
         // Navigation property
+        [ForeignKey(nameof(CustomerId))]
+
         public Customer Customer { get; set; }
 
 

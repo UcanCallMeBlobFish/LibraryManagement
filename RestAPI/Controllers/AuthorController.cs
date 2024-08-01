@@ -43,13 +43,8 @@ namespace RestAPI.Controllers
 
         // PUT api/<AuthorController>/5
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] AuthorUpdateDto author)
+        public async Task<ActionResult> Put([FromBody] AuthorUpdateDto author)
         {
-            if (id != author.Id)
-            {
-                return BadRequest();
-            }
-
             await _mediator.Send(new UpdateAuthorCommand(author));
             return NoContent();
         }

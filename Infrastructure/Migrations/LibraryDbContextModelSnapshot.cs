@@ -34,10 +34,6 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("CustomerUsername")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<DateTime>("SentDate")
                         .HasColumnType("datetime2");
 
@@ -53,8 +49,6 @@ namespace Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
-
-                    b.HasIndex("CustomerUsername");
 
                     b.ToTable("Alerts");
                 });
@@ -88,9 +82,6 @@ namespace Infrastructure.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
-                    b.Property<int>("CategoryId1")
-                        .HasColumnType("int");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -99,8 +90,6 @@ namespace Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
-
-                    b.HasIndex("CategoryId1");
 
                     b.ToTable("Books");
                 });
@@ -259,15 +248,9 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.Models.Alert", b =>
                 {
-                    b.HasOne("Domain.Models.Customer", null)
+                    b.HasOne("Domain.Models.Customer", "Customer")
                         .WithMany("Alerts")
                         .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerUsername")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -276,16 +259,10 @@ namespace Infrastructure.Migrations
 
             modelBuilder.Entity("Domain.Models.Book", b =>
                 {
-                    b.HasOne("Domain.Models.Category", null)
+                    b.HasOne("Domain.Models.Category", "Category")
                         .WithMany("Books")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.Category", "Category")
-                        .WithMany()
-                        .HasForeignKey("CategoryId1")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Category");

@@ -1,32 +1,26 @@
 ﻿using Domain.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Infrastructure.LibraryData.Config
+public class AlertConfiguration : IEntityTypeConfiguration<Alert>
 {
-    public class AlertConfiguration : IEntityTypeConfiguration<Alert>
+    public void Configure(EntityTypeBuilder<Alert> builder)
     {
-        public void Configure(EntityTypeBuilder<Alert> builder)
-        {
-            builder.HasKey(a => a.Id);
+        builder.HasKey(a => a.Id);
 
-            builder.Property(a => a.CustomerId).IsRequired();
+        builder.Property(a => a.CustomerId)
+            .IsRequired();
 
-            builder.HasIndex(a => a.CustomerId);
+        builder.Property(a => a.Subject)
+            .IsRequired();
 
-            builder.Property(a => a.Subject).IsRequired();
+        builder.Property(a => a.Text)
+            .IsRequired()
+            .HasMaxLength(100);
 
-            builder.Property(a => a.Text).IsRequired().HasMaxLength(100);
-
-            builder.HasOne<Customer>()
-                .WithMany(a => a.Alerts)
-                .HasForeignKey(a => a.CustomerId)
-                .OnDelete(DeleteBehavior.Restrict);
-        }
+        builder.HasOne(a => a.Customer)
+            .WithMany(c => c.Alerts)
+            .HasForeignKey(a => a.CustomerId)
+            .OnDelete(DeleteBehavior.Cascade); 
     }
 }

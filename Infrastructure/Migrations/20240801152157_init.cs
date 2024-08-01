@@ -72,8 +72,7 @@ namespace Infrastructure.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    CategoryId = table.Column<int>(type: "int", nullable: false),
-                    CategoryId1 = table.Column<int>(type: "int", nullable: false)
+                    CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -84,12 +83,6 @@ namespace Infrastructure.Migrations
                         principalTable: "Categories",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Books_Categories_CategoryId1",
-                        column: x => x.CategoryId1,
-                        principalTable: "Categories",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -98,8 +91,7 @@ namespace Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    UserTo = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Username = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    CustomerId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     SentDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Subject = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Text = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false)
@@ -108,14 +100,8 @@ namespace Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_Alerts", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Alerts_Customers_UserTo",
-                        column: x => x.UserTo,
-                        principalTable: "Customers",
-                        principalColumn: "Username",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Alerts_Customers_Username",
-                        column: x => x.Username,
+                        name: "FK_Alerts_Customers_CustomerId",
+                        column: x => x.CustomerId,
                         principalTable: "Customers",
                         principalColumn: "Username",
                         onDelete: ReferentialAction.Cascade);
@@ -206,14 +192,9 @@ namespace Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Alerts_Username",
+                name: "IX_Alerts_CustomerId",
                 table: "Alerts",
-                column: "Username");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Alerts_UserTo",
-                table: "Alerts",
-                column: "UserTo");
+                column: "CustomerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_BookAuthors_AuthorId",
@@ -239,11 +220,6 @@ namespace Infrastructure.Migrations
                 name: "IX_Books_CategoryId",
                 table: "Books",
                 column: "CategoryId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Books_CategoryId1",
-                table: "Books",
-                column: "CategoryId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Checkouts_BookOnShelvesId",

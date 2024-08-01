@@ -43,13 +43,8 @@ namespace RestAPI.Controllers
 
         // PUT api/<CategoryController>/5
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] CategoryUpdateDto category)
+        public async Task<ActionResult> Put([FromBody] CategoryUpdateDto category)
         {
-            if (id != category.Id)
-            {
-                return BadRequest();
-            }
-
             await _mediator.Send(new UpdateCategoryCommand(category));
             return NoContent();
         }
