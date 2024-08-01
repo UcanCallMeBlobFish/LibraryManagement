@@ -68,7 +68,7 @@
             },
             "MediatR": {
               "target": "Package",
-              "version": "[12.4.0, )"
+              "version": "[11.1.0, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -292,6 +292,9 @@
               "C:\\Users\\Kiu-Student\\Desktop\\LibraryManagement\\Application\\Application.csproj": {
                 "projectPath": "C:\\Users\\Kiu-Student\\Desktop\\LibraryManagement\\Application\\Application.csproj"
               },
+              "C:\\Users\\Kiu-Student\\Desktop\\LibraryManagement\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Kiu-Student\\Desktop\\LibraryManagement\\Domain\\Domain.csproj"
+              },
               "C:\\Users\\Kiu-Student\\Desktop\\LibraryManagement\\Infrastructure\\Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\Kiu-Student\\Desktop\\LibraryManagement\\Infrastructure\\Infrastructure.csproj"
               }
@@ -313,6 +316,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "NLog": {
               "target": "Package",
               "version": "[5.3.2, )"

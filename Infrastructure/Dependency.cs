@@ -1,6 +1,7 @@
 ﻿using Application.Abstractions;
 using Infrastructure.LibraryData;
 using Infrastructure.Repositories;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,7 +30,6 @@ namespace Infrastructure
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IAlertRepository, AlertRepository>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();
-            services.AddScoped<IBookAuthorRepository, BookAuthorRepository>();
             services.AddScoped<IBookOnShelfRepository, BookOnShelfRepository>();
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
@@ -38,7 +38,7 @@ namespace Infrastructure
             services.AddScoped<IEditorRepository, EditorRepository>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+            services.AddMediatR(Assembly.GetExecutingAssembly());
             return services;
         }
     }

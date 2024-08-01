@@ -11,7 +11,6 @@ namespace Application.Abstractions
     {
         IAlertRepository Alerts { get; }
         IAuthorRepository Authors { get; }
-        IBookAuthorRepository BookAuthors { get; }
         IBookOnShelfRepository BookOnShelves { get; }
         IBookRepository Books { get; }
         ICategoryRepository Categories { get; }

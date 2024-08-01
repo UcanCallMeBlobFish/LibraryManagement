@@ -15,7 +15,6 @@ namespace Infrastructure.Repositories
 
         public IAlertRepository Alerts { get; }
         public IAuthorRepository Authors { get; }
-        public IBookAuthorRepository BookAuthors { get; }
         public IBookOnShelfRepository BookOnShelves { get; }
         public IBookRepository Books { get; }
         public ICategoryRepository Categories { get; }
@@ -27,7 +26,6 @@ namespace Infrastructure.Repositories
         public UnitOfWork(LibraryDbContext context,
                           IAlertRepository alerts,
                           IAuthorRepository authors,
-                          IBookAuthorRepository bookAuthors,
                           IBookOnShelfRepository bookOnShelves,
                           IBookRepository books,
                           ICategoryRepository categories,
@@ -39,7 +37,6 @@ namespace Infrastructure.Repositories
             _context = context;
             Alerts = alerts;
             Authors = authors;
-            BookAuthors = bookAuthors;
             BookOnShelves = bookOnShelves;
             Books = books;
             Categories = categories;

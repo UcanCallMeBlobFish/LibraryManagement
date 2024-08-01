@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using NLog;
 using NLog.Extensions.Logging;
 using System.Reflection;
+using MediatR;
 
 namespace Application
 {
@@ -12,6 +13,7 @@ namespace Application
         {
             // Register AutoMapper
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddMediatR(Assembly.GetExecutingAssembly());
 
             // Register logging
             services.AddLogging(loggingBuilder =>
@@ -23,6 +25,8 @@ namespace Application
 
             // Configure NLog
             LogManager.LoadConfiguration("NLog.config");
+
+            services.AddSingleton<NLog.ILogger>(provider => LogManager.GetCurrentClassLogger());
 
             return services;
         }

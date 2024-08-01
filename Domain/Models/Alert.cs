@@ -10,10 +10,14 @@ namespace Domain.Models
     public class Alert : BaseEntity
     {
 
-      
+
         //fk
-        public string UserTo { get; set; }
-        public Customer User { get; set; }
+        public string CustomerId { get; set; }
+
+        // Navigation property
+        public Customer Customer { get; set; }
+
+
 
         public DateTime SentDate { get; set; }
         public string Subject { get; set; }

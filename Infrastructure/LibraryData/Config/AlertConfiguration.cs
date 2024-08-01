@@ -15,9 +15,9 @@ namespace Infrastructure.LibraryData.Config
         {
             builder.HasKey(a => a.Id);
 
-            builder.Property(a => a.UserTo).IsRequired();
+            builder.Property(a => a.CustomerId).IsRequired();
 
-            builder.HasIndex(a => a.UserTo);
+            builder.HasIndex(a => a.CustomerId);
 
             builder.Property(a => a.Subject).IsRequired();
 
@@ -25,7 +25,7 @@ namespace Infrastructure.LibraryData.Config
 
             builder.HasOne<Customer>()
                 .WithMany(a => a.Alerts)
-                .HasForeignKey(a => a.UserTo)
+                .HasForeignKey(a => a.CustomerId)
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

@@ -2,7 +2,7 @@
 using Application.DTOs;
 using Application.Features.Requests.Query.Editor;
 using MediatR;
-using Microsoft.Extensions.Logging;
+using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;

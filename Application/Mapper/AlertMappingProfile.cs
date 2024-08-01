@@ -8,10 +8,23 @@ namespace Application.Mapper
     {
         public AlertMappingProfile()
         {
-            CreateMap<Alert, AlertDto>().ReverseMap();
-            CreateMap<Alert, AlertCreateDto>().ReverseMap();
-            CreateMap<Alert, AlertUpdateDto>().ReverseMap();
-            CreateMap<Alert, AlertDeleteDto>().ReverseMap();
+            CreateMap<Alert, AlertDto>()
+              .ForMember(dest => dest.UserTo, opt => opt.MapFrom(src => src.CustomerId))
+              .ReverseMap()
+              .ForMember(dest => dest.CustomerId, opt => opt.MapFrom(src => src.UserTo));
+
+            CreateMap<Alert, AlertCreateDto>()
+                .ForMember(dest => dest.UserTo, opt => opt.MapFrom(src => src.CustomerId))
+                .ReverseMap()
+                .ForMember(dest => dest.CustomerId, opt => opt.MapFrom(src => src.UserTo));
+
+            CreateMap<Alert, AlertUpdateDto>()
+                .ForMember(dest => dest.UserTo, opt => opt.MapFrom(src => src.CustomerId))
+                .ReverseMap()
+                .ForMember(dest => dest.CustomerId, opt => opt.MapFrom(src => src.UserTo));
+
+            CreateMap<Alert, AlertDeleteDto>()
+                .ReverseMap();
         }
     }
 }

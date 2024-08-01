@@ -30,6 +30,14 @@ namespace Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("CustomerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CustomerUsername")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<DateTime>("SentDate")
                         .HasColumnType("datetime2");
 
@@ -42,19 +50,11 @@ namespace Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("UserTo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("UserTo");
+                    b.HasIndex("CustomerId");
 
-                    b.HasIndex("Username");
+                    b.HasIndex("CustomerUsername");
 
                     b.ToTable("Alerts");
                 });
@@ -261,17 +261,17 @@ namespace Infrastructure.Migrations
                 {
                     b.HasOne("Domain.Models.Customer", null)
                         .WithMany("Alerts")
-                        .HasForeignKey("UserTo")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("Domain.Models.Customer", "User")
+                    b.HasOne("Domain.Models.Customer", "Customer")
                         .WithMany()
-                        .HasForeignKey("Username")
+                        .HasForeignKey("CustomerUsername")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("User");
+                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("Domain.Models.Book", b =>

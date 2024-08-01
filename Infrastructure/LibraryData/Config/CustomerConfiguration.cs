@@ -32,8 +32,8 @@ namespace Infrastructure.LibraryData.Config
                 .HasForeignKey(f => f.CustomerId);
 
             builder.HasMany(a => a.Alerts)
-                .WithOne(c => c.User)
-                .HasForeignKey(f => f.UserTo);
+                .WithOne(c => c.Customer)
+                .HasForeignKey(f => f.CustomerId);
 
 
         }
