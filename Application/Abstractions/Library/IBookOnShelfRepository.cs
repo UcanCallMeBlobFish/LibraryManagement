@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Abstractions
+namespace Application.Abstractions.Library
 {
-    public interface IEditorRepository : IGenericRepository<Editor>
+    public interface IBookOnShelfRepository : IGenericRepository<BookOnShelves>
     {
     }
 }

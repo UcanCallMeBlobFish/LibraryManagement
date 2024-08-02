@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Abstractions
+namespace Application.Abstractions.Library
 {
     public interface IGenericRepository<T>
     {

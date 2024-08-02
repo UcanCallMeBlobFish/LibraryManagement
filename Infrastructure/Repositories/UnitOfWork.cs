@@ -1,4 +1,4 @@
-﻿using Application.Abstractions;
+﻿using Application.Abstractions.Library;
 using AutoMapper;
 using Infrastructure.LibraryData;
 using System;

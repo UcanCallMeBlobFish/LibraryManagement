@@ -5,9 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Abstractions
+namespace Application.Abstractions.Library
 {
-    public interface IAlertRepository : IGenericRepository<Alert>
+    public interface ICustomerRepository : IGenericRepository<Customer>
     {
+        Task<Customer> Get(string id);
+
     }
 }

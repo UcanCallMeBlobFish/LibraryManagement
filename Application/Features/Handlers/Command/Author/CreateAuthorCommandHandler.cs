@@ -1,5 +1,4 @@
-﻿using Application.Abstractions;
-using Application.DTOs.Validations;
+﻿using Application.DTOs.Validations;
 using Application.Features.Requests.Command.Author;
 using MediatR;
 using NLog;
@@ -9,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Models;
+using Application.Abstractions.Library;
 
 namespace Application.Features.Handlers.Command.Author
 {

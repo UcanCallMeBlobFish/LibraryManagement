@@ -1,4 +1,4 @@
-﻿using Application.Abstractions;
+﻿using Application.Abstractions.Library;
 using Application.DTOs;
 using Application.Features.Requests.Query.Alert;
 using MediatR;

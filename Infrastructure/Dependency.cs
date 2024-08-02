@@ -1,7 +1,12 @@
-﻿using Application.Abstractions;
+﻿using Application.Abstractions.Library;
+using Application.Models.Identity.JWTModels;
+using Domain.Models;
+using Infrastructure.IdentityData;
+using Infrastructure.IdentityData.Models;
 using Infrastructure.LibraryData;
 using Infrastructure.Repositories;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +16,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Infrastructure
 {
@@ -24,6 +30,18 @@ namespace Infrastructure
 
             services.AddDbContext<LibraryDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("LibraryDatabase")));
+
+            services.AddDbContext<IdentityDbContext>(options =>
+            options.UseSqlServer(configuration.GetConnectionString("IdentityDatabase")));
+          
+            services.AddIdentity<Customer, IdentityRole>()
+             .AddEntityFrameworkStores<IdentityDbContext>()
+            .AddDefaultTokenProviders();
+
+            //this is for IOptions in authservice.cs, mapping json obj to cs obj.
+            services.Configure<JWTSettings>(configuration.GetSection("JwtSettings"));
+
+
 
 
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
