@@ -2,24 +2,29 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using NLog;
-using NLog.Web;
+using Serilog;
+using Serilog.Events;
 using Infrastructure;
 using Application;
-using NLog.Extensions.Logging;
-using System.Reflection;
 using MediatR;
 using RestAPI;
 using RestAPI.Middleware;
-
+using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure NLog
-LogManager.LoadConfiguration("NLog.config");
+// Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+    .WriteTo.Console()
+    .WriteTo.File(@"C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\Logs\app-log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
-builder.Logging.ClearProviders(); // Remove other logging providers
-builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace); // Set minimum log level
-builder.Logging.AddNLog(); // Add NLog as the logging provider
+builder.Host.UseSerilog(); // Use Serilog for logging
+
+// Clear default providers and set Serilog as the logging provider
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog();
 
 // Add services to the container
 builder.Services.ConfigureApplicationServices();

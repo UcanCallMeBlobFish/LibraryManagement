@@ -6,9 +6,13 @@ namespace RestAPI.Middleware
     public class GlobalExceptionHandlingMiddleware
     {
         private readonly RequestDelegate _next;
-        public GlobalExceptionHandlingMiddleware(RequestDelegate next)
+        private readonly ILogger<GlobalExceptionHandlingMiddleware> _logger;
+
+        public GlobalExceptionHandlingMiddleware(RequestDelegate next, ILogger<GlobalExceptionHandlingMiddleware> logger)
         {
+
             _next = next;
+            _logger = logger;
         }
 
         public async Task Invoke(HttpContext context)
@@ -19,6 +23,7 @@ namespace RestAPI.Middleware
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "exception occur");
                 await HandleExceptionAsync(context, ex);
             }
         }
