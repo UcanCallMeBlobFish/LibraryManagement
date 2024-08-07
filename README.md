@@ -140,3 +140,9 @@ For any inquiries or feedback, please contact:
 ---
 
 Feel free to adjust any section to better fit your project's details or specific requirements.
+
+
+
+admin@localhost.com
+user@localhost.com
+P@ssword1
