@@ -81,7 +81,7 @@ namespace Infrastructure.Services.IdentityServices
             var roleClaims = new List<Claim>(roles.Count);
             foreach (var role in roles)
             {
-                roleClaims.Add(new Claim("roles", role));
+                roleClaims.Add(new Claim(ClaimTypes.Role, role));
             }
 
             // Create the initial set of claims

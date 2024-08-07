@@ -166,7 +166,7 @@ namespace Infrastructure.Migrations.IdentityDb
                 values: new object[,]
                 {
                     { "cac43a6e-f7bb-4448-baaf-1add431ccbbf", null, "Customer", "CUSTOMER" },
-                    { "cbc43a8e-f7bb-4445-baaf-1add431ffbbf", null, "Librarian", "ADMINISTRATOR" }
+                    { "cbc43a8e-f7bb-4445-baaf-1add431ffbbf", null, "Librarian", "LIBRARIAN" }
                 });
 
             migrationBuilder.InsertData(
@@ -174,8 +174,8 @@ namespace Infrastructure.Migrations.IdentityDb
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "8e445865-a24d-4543-a6c6-9443d048cdb9", 0, "ad01b011-c754-46b2-acfe-3dbeb24c30bf", "admin@localhost.com", true, "System", "Admin", false, null, "ADMIN@LOCALHOST.COM", "ADMIN@LOCALHOST.COM", "AQAAAAIAAYagAAAAECTLQWRqs/ZewCDFwfYQqmCQgp47mJzeNSPdL/h3/UVDVr09le9d9SpEsgxsAM+fEQ==", null, false, "f1091287-9251-46e5-a3e0-cdbed7bf1211", false, "admin@localhost.com" },
-                    { "9e224968-33e4-4652-b7b7-8574d048cdb9", 0, "b45a1417-3f45-45ee-ae42-f1b1fb9bce79", "user@localhost.com", true, "System", "User", false, null, "USER@LOCALHOST.COM", "USER@LOCALHOST.COM", "AQAAAAIAAYagAAAAEIGSDtRfIgQjxbS6aM+/UqswhGBbm80jArHQj/1YMfHyIPD01Bkcwf3aKIskdBM7/g==", null, false, "0b1c2b4a-aecb-42a8-9c9a-b10bd2b7455a", false, "user@localhost.com" }
+                    { "8e445865-a24d-4543-a6c6-9443d048cdb9", 0, "6242fb1a-e9b3-4c0f-b5d1-401affa54c5d", "admin@localhost.com", true, "System", "Admin", false, null, "ADMIN@LOCALHOST.COM", "ADMIN@LOCALHOST.COM", "AQAAAAIAAYagAAAAEOOf/nIqpRG6pvmH4B/+46L33lSxdcR7eGyMB1pStKli1UywXWf4Ky3RfkVK3lFKhQ==", null, false, "e3f387c3-e485-4400-8c25-507a797a6c41", false, "admin@localhost.com" },
+                    { "9e224968-33e4-4652-b7b7-8574d048cdb9", 0, "83d95811-33ac-4184-b124-929924e636b1", "user@localhost.com", true, "System", "User", false, null, "USER@LOCALHOST.COM", "USER@LOCALHOST.COM", "AQAAAAIAAYagAAAAEB5PouKQr/H5djBoMe7duoDKodQabCXfN/1RxTxIneNPLBC2Go9qcweb3gOdAyFKfg==", null, false, "9a311473-1981-4f70-b97b-a17ac73e4b0e", false, "user@localhost.com" }
                 });
 
             migrationBuilder.InsertData(

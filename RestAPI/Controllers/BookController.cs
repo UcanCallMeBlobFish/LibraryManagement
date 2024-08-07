@@ -2,6 +2,7 @@
 using Application.Features.Requests.Command.Book;
 using Application.Features.Requests.Query.Book;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace RestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class BookController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -34,6 +36,7 @@ namespace RestAPI.Controllers
         }
 
         // POST api/<BookController>
+
         [HttpPost]
         public async Task<ActionResult<int>> Post([FromBody] BookCreateDto book)
         {
@@ -42,6 +45,8 @@ namespace RestAPI.Controllers
         }
 
         // PUT api/<BookController>/5
+        [Authorize(Roles = "Librarian")]
+
         [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, [FromBody] BookUpdateDto book)
         {
@@ -55,6 +60,8 @@ namespace RestAPI.Controllers
         }
 
         // DELETE api/<BookController>/5
+        [Authorize(Roles = "Librarian")]
+
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {

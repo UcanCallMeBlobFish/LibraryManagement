@@ -2,6 +2,7 @@
 using Application.Features.Requests.Command.BookOnShelves;
 using Application.Features.Requests.Query.BookOnShelves;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,6 +35,8 @@ namespace RestAPI.Controllers
         }
 
         // POST api/<BookOnShelfController>
+        [Authorize(Roles = "Librarian")]
+
         [HttpPost]
         public async Task<ActionResult<int>> Post([FromBody] BookOnShelvesCreateDto bookOnShelf)
         {
@@ -42,6 +45,8 @@ namespace RestAPI.Controllers
         }
 
         // PUT api/<BookOnShelfController>/5
+        [Authorize(Roles = "Librarian")]
+
         [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, [FromBody] BookOnShelvesUpdateDto bookOnShelf)
         {
@@ -55,6 +60,8 @@ namespace RestAPI.Controllers
         }
 
         // DELETE api/<BookOnShelfController>/5
+        [Authorize(Roles = "Librarian")]
+
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {

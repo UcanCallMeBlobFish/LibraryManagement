@@ -10,7 +10,6 @@ namespace RestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class AuthorController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -36,6 +35,7 @@ namespace RestAPI.Controllers
         }
 
         // POST api/<AuthorController>
+        [Authorize(Roles = "Librarian")]
         [HttpPost]
         public async Task<ActionResult<int>> Post([FromBody] AuthorCreateDto author)
         {
@@ -44,6 +44,7 @@ namespace RestAPI.Controllers
         }
 
         // PUT api/<AuthorController>/5
+        [Authorize(Roles = "Librarian")]
         [HttpPut("{id}")]
         public async Task<ActionResult> Put([FromBody] AuthorUpdateDto author)
         {
@@ -52,6 +53,7 @@ namespace RestAPI.Controllers
         }
 
         // DELETE api/<AuthorController>/5
+        [Authorize(Roles = "Librarian")]
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {

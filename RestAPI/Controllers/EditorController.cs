@@ -2,6 +2,7 @@
 using Application.Features.Requests.Command.Editor;
 using Application.Features.Requests.Query.Editor;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,6 +35,8 @@ namespace RestAPI.Controllers
         }
 
         // POST api/<EditorController>
+        [Authorize(Roles = "Librarian")]
+
         [HttpPost]
         public async Task<ActionResult<int>> Post([FromBody] EditorCreateDto editor)
         {
@@ -42,6 +45,8 @@ namespace RestAPI.Controllers
         }
 
         // PUT api/<EditorController>/5
+        [Authorize(Roles = "Librarian")]
+
         [HttpPut("{id}")]
         public async Task<ActionResult> Put([FromBody] EditorUpdateDto editor)
         {
@@ -52,6 +57,8 @@ namespace RestAPI.Controllers
         }
 
         // DELETE api/<EditorController>/5
+        [Authorize(Roles = "Librarian")]
+
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {

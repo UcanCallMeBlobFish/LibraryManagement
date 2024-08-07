@@ -99,7 +99,7 @@ namespace Infrastructure.Migrations.IdentityDb
                         {
                             Id = "8e445865-a24d-4543-a6c6-9443d048cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ad01b011-c754-46b2-acfe-3dbeb24c30bf",
+                            ConcurrencyStamp = "6242fb1a-e9b3-4c0f-b5d1-401affa54c5d",
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
                             FirstName = "System",
@@ -107,9 +107,9 @@ namespace Infrastructure.Migrations.IdentityDb
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAECTLQWRqs/ZewCDFwfYQqmCQgp47mJzeNSPdL/h3/UVDVr09le9d9SpEsgxsAM+fEQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOOf/nIqpRG6pvmH4B/+46L33lSxdcR7eGyMB1pStKli1UywXWf4Ky3RfkVK3lFKhQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f1091287-9251-46e5-a3e0-cdbed7bf1211",
+                            SecurityStamp = "e3f387c3-e485-4400-8c25-507a797a6c41",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         },
@@ -117,7 +117,7 @@ namespace Infrastructure.Migrations.IdentityDb
                         {
                             Id = "9e224968-33e4-4652-b7b7-8574d048cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b45a1417-3f45-45ee-ae42-f1b1fb9bce79",
+                            ConcurrencyStamp = "83d95811-33ac-4184-b124-929924e636b1",
                             Email = "user@localhost.com",
                             EmailConfirmed = true,
                             FirstName = "System",
@@ -125,9 +125,9 @@ namespace Infrastructure.Migrations.IdentityDb
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIGSDtRfIgQjxbS6aM+/UqswhGBbm80jArHQj/1YMfHyIPD01Bkcwf3aKIskdBM7/g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEB5PouKQr/H5djBoMe7duoDKodQabCXfN/1RxTxIneNPLBC2Go9qcweb3gOdAyFKfg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "0b1c2b4a-aecb-42a8-9c9a-b10bd2b7455a",
+                            SecurityStamp = "9a311473-1981-4f70-b97b-a17ac73e4b0e",
                             TwoFactorEnabled = false,
                             UserName = "user@localhost.com"
                         });
@@ -170,7 +170,7 @@ namespace Infrastructure.Migrations.IdentityDb
                         {
                             Id = "cbc43a8e-f7bb-4445-baaf-1add431ffbbf",
                             Name = "Librarian",
-                            NormalizedName = "ADMINISTRATOR"
+                            NormalizedName = "LIBRARIAN"
                         });
                 });
 

@@ -2,6 +2,7 @@
 using Application.Features.Requests.Command.Category;
 using Application.Features.Requests.Query.Category;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,6 +35,8 @@ namespace RestAPI.Controllers
         }
 
         // POST api/<CategoryController>
+        [Authorize(Roles = "Librarian")]
+
         [HttpPost]
         public async Task<ActionResult<int>> Post([FromBody] CategoryCreateDto category)
         {
@@ -42,12 +45,16 @@ namespace RestAPI.Controllers
         }
 
         // PUT api/<CategoryController>/5
+        [Authorize(Roles = "Librarian")]
+
         [HttpPut("{id}")]
         public async Task<ActionResult> Put([FromBody] CategoryUpdateDto category)
         {
             await _mediator.Send(new UpdateCategoryCommand(category));
             return NoContent();
         }
+
+        [Authorize(Roles = "Librarian")]
 
         // DELETE api/<CategoryController>/5
         [HttpDelete("{id}")]

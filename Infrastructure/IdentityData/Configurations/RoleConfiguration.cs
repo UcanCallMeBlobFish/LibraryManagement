@@ -24,7 +24,7 @@ namespace Infrastructure.IdentityData.Configurations
                 {
                     Id = "cbc43a8e-f7bb-4445-baaf-1add431ffbbf",
                     Name = "Librarian",
-                    NormalizedName = "ADMINISTRATOR"
+                    NormalizedName = "LIBRARIAN"
                 }
             );
         }

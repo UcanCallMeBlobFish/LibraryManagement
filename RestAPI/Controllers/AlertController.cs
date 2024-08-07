@@ -3,6 +3,7 @@ using Application.Features.Requests.Command.Alert;
 using Application.Features.Requests.Query.Alert;
 using AutoMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,6 +12,8 @@ namespace RestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Librarian")]
+
     public class AlertController : ControllerBase
     {
         private readonly IMediator _mediator;
