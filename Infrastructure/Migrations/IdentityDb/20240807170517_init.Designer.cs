@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Migrations.IdentityDb
 {
     [DbContext(typeof(IdentityDbContext))]
-    [Migration("20240802203838_init")]
+    [Migration("20240807170517_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -102,7 +102,7 @@ namespace Infrastructure.Migrations.IdentityDb
                         {
                             Id = "8e445865-a24d-4543-a6c6-9443d048cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c3d12f1d-eae6-4a8b-8a9f-558a979f6bd8",
+                            ConcurrencyStamp = "ad01b011-c754-46b2-acfe-3dbeb24c30bf",
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
                             FirstName = "System",
@@ -110,9 +110,9 @@ namespace Infrastructure.Migrations.IdentityDb
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKoN3heZUX1NVqIcXmJMt9sHe25n9c3dGPlXMv03HFVBCQjgIhSwIKc01QjGya7U2g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECTLQWRqs/ZewCDFwfYQqmCQgp47mJzeNSPdL/h3/UVDVr09le9d9SpEsgxsAM+fEQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4f66d38c-1ce1-45c6-8797-a3892d772f7b",
+                            SecurityStamp = "f1091287-9251-46e5-a3e0-cdbed7bf1211",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         },
@@ -120,7 +120,7 @@ namespace Infrastructure.Migrations.IdentityDb
                         {
                             Id = "9e224968-33e4-4652-b7b7-8574d048cdb9",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4c89198a-ced5-4e14-8497-bac77438685e",
+                            ConcurrencyStamp = "b45a1417-3f45-45ee-ae42-f1b1fb9bce79",
                             Email = "user@localhost.com",
                             EmailConfirmed = true,
                             FirstName = "System",
@@ -128,9 +128,9 @@ namespace Infrastructure.Migrations.IdentityDb
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LOCALHOST.COM",
                             NormalizedUserName = "USER@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEI0eXsJLjm/+ktwJan33XbkJTt5lBz6q8xilgEq52mcV9LK4k7dozvs0iPeSPw2jUQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIGSDtRfIgQjxbS6aM+/UqswhGBbm80jArHQj/1YMfHyIPD01Bkcwf3aKIskdBM7/g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "72cfacdf-0628-4ae9-9083-bf042bc72bbe",
+                            SecurityStamp = "0b1c2b4a-aecb-42a8-9c9a-b10bd2b7455a",
                             TwoFactorEnabled = false,
                             UserName = "user@localhost.com"
                         });

@@ -9,6 +9,7 @@ using Application;
 using NLog.Extensions.Logging;
 using System.Reflection;
 using MediatR;
+using RestAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,7 +23,10 @@ builder.Logging.AddNLog(); // Add NLog as the logging provider
 // Add services to the container
 builder.Services.ConfigureApplicationServices();
 builder.Services.AddPersistenceService(builder.Configuration);
+builder.Services.AddSwaggerDoc();
+
 ///builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -37,8 +41,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();
