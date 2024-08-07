@@ -14,12 +14,10 @@ namespace Application.Features.Handlers.Command.Alert
     public class CreateAlertCommandHandler : IRequestHandler<CreateAlertCommand, int>
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly ILogger _logger;
 
-        public CreateAlertCommandHandler(IUnitOfWork unitOfWork, ILogger logger)
+        public CreateAlertCommandHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _logger = logger;
         }
 
         public async Task<int> Handle(CreateAlertCommand request, CancellationToken cancellationToken)
@@ -28,14 +26,8 @@ namespace Application.Features.Handlers.Command.Alert
             var validator = new AlertCreateDtoValidator();
             var validationResult = await validator.ValidateAsync(request.AlertCreateDto, cancellationToken);
 
-            if (!validationResult.IsValid)
-            {
-                foreach (var error in validationResult.Errors)
-                {
-                    _logger.Warn(error.ErrorMessage);
-                }
-                throw new ArgumentException("custom");
-            }
+            if (!validationResult.IsValid)  throw new ArgumentException("custom");
+            
 
             var alert = _unitOfWork.Mapper.Map<Domain.Models.Alert>(request.AlertCreateDto);
             await _unitOfWork.Alerts.Add(alert);

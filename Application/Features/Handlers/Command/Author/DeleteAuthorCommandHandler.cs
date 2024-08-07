@@ -1,11 +1,11 @@
 ﻿using Application.Abstractions.Library;
 using Application.Features.Requests.Command.Author;
 using MediatR;
-using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Application.Features.Handlers.Command.Author
@@ -13,12 +13,10 @@ namespace Application.Features.Handlers.Command.Author
     public class DeleteAuthorCommandHandler : IRequestHandler<DeleteAuthorCommand, Unit>
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly ILogger _logger;
 
-        public DeleteAuthorCommandHandler(IUnitOfWork unitOfWork, ILogger logger)
+        public DeleteAuthorCommandHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _logger = logger;
         }
 
         public async Task<Unit> Handle(DeleteAuthorCommand request, CancellationToken cancellationToken)
@@ -26,7 +24,6 @@ namespace Application.Features.Handlers.Command.Author
             var author = await _unitOfWork.Authors.Get(request.Id);
             if (author == null)
             {
-                _logger.Warn($"Author with ID {request.Id} not found.");
                 throw new KeyNotFoundException($"Author with ID {request.Id} not found.");
             }
 

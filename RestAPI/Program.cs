@@ -10,6 +10,7 @@ using NLog.Extensions.Logging;
 using System.Reflection;
 using MediatR;
 using RestAPI;
+using RestAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +47,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 
 app.MapControllers();
 
