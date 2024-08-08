@@ -20,6 +20,7 @@ This project is a **Library Management System** built using **.NET**, following 
 - **JWT Authentication**: Secures API endpoints with JSON Web Tokens.
 - **MS SQL Server**: Serves as the database management system.
 - **Global Exception Handling**: Middleware.
+- **InMemory Caching/Scrutor/Decorator Design Pattern for BookRepository**: InmemCaching.
 
 
 ## Technologies Used
@@ -35,6 +36,8 @@ This project is a **Library Management System** built using **.NET**, following 
 - **JWT Authentication**
 -  **Serilog**
 -  **Global Exception Handling**
+-  **GOF DesignPatterns/InMemCache**
+
 
 
 ## Getting Started
