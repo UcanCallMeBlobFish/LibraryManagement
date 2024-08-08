@@ -12,6 +12,8 @@ namespace Infrastructure.Services.CachingServices.Redis
     public class CacheService : ICacheService
     {
         private readonly IDistributedCache _distributedCache;
+        private static readonly TimeSpan DefaultExpiration = TimeSpan.FromMinutes(5); // TTL of 5 minutes
+
         public CacheService(IDistributedCache distributedCache)
         {
             _distributedCache = distributedCache;
@@ -41,7 +43,11 @@ namespace Infrastructure.Services.CachingServices.Redis
         {
             string cacheValue = JsonConvert.SerializeObject(value);
 
-            await _distributedCache.SetStringAsync(key, cacheValue, cancellationToken);
+            var cacheOptions = new DistributedCacheEntryOptions
+            {
+                AbsoluteExpirationRelativeToNow = DefaultExpiration // Set TTL to 5 minutes
+            };
+            await _distributedCache.SetStringAsync(key, cacheValue, cacheOptions, cancellationToken);
         }
 
        

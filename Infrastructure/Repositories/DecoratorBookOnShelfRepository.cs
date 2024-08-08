@@ -1,5 +1,7 @@
-﻿using Application.Abstractions.Library;
+﻿using Application.Abstractions.Caching;
+using Application.Abstractions.Library;
 using Domain.Models;
+using Infrastructure.Services.CachingServices.Redis;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 using System;
@@ -13,10 +15,13 @@ namespace Infrastructure.Repositories
     public class DecoratorBookOnShelfRepository : IBookOnShelfRepository
     {
         private readonly IBookOnShelfRepository _bookOnShelfRepository;
+
         private readonly IDistributedCache _distributedCache;
 
-        public DecoratorBookOnShelfRepository(IBookOnShelfRepository bookOnShelfRepository, IDistributedCache distributedCache)
+        private readonly ICacheService _cacheService;
+        public DecoratorBookOnShelfRepository(IBookOnShelfRepository bookOnShelfRepository, IDistributedCache distributedCache, ICacheService cacheService)
         {
+            _cacheService = cacheService;
             _bookOnShelfRepository = bookOnShelfRepository;
             _distributedCache = distributedCache;
         }
@@ -36,53 +41,61 @@ namespace Infrastructure.Repositories
         }
 
         // Using Redis D Caching for functions provided below.
+        //public async Task<BookOnShelves> Get(int id)
+        //{
+        //    string key = $"BookOnShelves-{id}";
+
+        //    string? cachedMember = await _distributedCache.GetStringAsync(key);
+
+        //    BookOnShelves? book;
+        //    //there is no such a thing in a redis, so lets return and store too.
+        //    if (string.IsNullOrEmpty(cachedMember)) 
+        //    {
+        //        var cacheOptions = new DistributedCacheEntryOptions
+        //        {
+        //            AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60)
+        //        };
+        //        book = await _bookOnShelfRepository.Get(id);
+        //        await _distributedCache.SetStringAsync(key,JsonConvert.SerializeObject(book), cacheOptions);
+
+        //        return book;
+        //    } 
+
+        //    //if found then deserialize and return.
+        //    book = JsonConvert.DeserializeObject<BookOnShelves>(cachedMember);
+        //    return book;
+
+        //}
+
         public async Task<BookOnShelves> Get(int id)
         {
             string key = $"BookOnShelves-{id}";
 
-            string? cachedMember = await _distributedCache.GetStringAsync(key);
+            BookOnShelves? book = await _cacheService.GetAsync<BookOnShelves>(key);
 
-            BookOnShelves? book;
-            //there is no such a thing in a redis, so lets return and store too.
-            if (string.IsNullOrEmpty(cachedMember)) 
+            if (book == null)
             {
-                var cacheOptions = new DistributedCacheEntryOptions
-                {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60)
-                };
                 book = await _bookOnShelfRepository.Get(id);
-                await _distributedCache.SetStringAsync(key,JsonConvert.SerializeObject(book), cacheOptions);
+                await _cacheService.SetAsync(key, book, cancellationToken: default); // Set cache with a default TTL if needed
+            }
 
-                return book;
-            } 
-
-            //if found then deserialize and return.
-            book = JsonConvert.DeserializeObject<BookOnShelves>(cachedMember);
             return book;
-
         }
-
         public async Task<IReadOnlyList<BookOnShelves>> GetAll()
         {
             string key = "AllBookOnShelves";
 
-            string? cachedMember = await _distributedCache.GetStringAsync(key);
+            IReadOnlyList<BookOnShelves>? books = await _cacheService.GetAsync<IReadOnlyList<BookOnShelves>>(key);
 
-            IReadOnlyList<BookOnShelves>? book;
-            //there is no such a thing in a redis, so lets return and store too.
-            if (string.IsNullOrEmpty(cachedMember))
+            if (books == null)
             {
-                book = await _bookOnShelfRepository.GetAll();
-                await _distributedCache.SetStringAsync(key, JsonConvert.SerializeObject(book));
-
-                return book;
+                books = await _bookOnShelfRepository.GetAll();
+                await _cacheService.SetAsync(key, books, cancellationToken: default); // Set cache with a default TTL if needed
             }
 
-            //if found then deserialize and return.
-            book = JsonConvert.DeserializeObject<IReadOnlyList<BookOnShelves>>(cachedMember);
-            return book;
+            return books;
         }
 
-        
+
     }
 }

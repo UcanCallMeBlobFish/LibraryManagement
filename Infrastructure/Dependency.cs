@@ -1,4 +1,5 @@
-﻿using Application.Abstractions.Identity;
+﻿using Application.Abstractions.Caching;
+using Application.Abstractions.Identity;
 using Application.Abstractions.Library;
 using Application.Models.Identity.JWTModels;
 using Domain.Models;
@@ -6,6 +7,7 @@ using Infrastructure.IdentityData;
 using Infrastructure.IdentityData.Models;
 using Infrastructure.LibraryData;
 using Infrastructure.Repositories;
+using Infrastructure.Services.CachingServices.Redis;
 using Infrastructure.Services.IdentityServices;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -103,6 +105,7 @@ namespace Infrastructure
             //Redis Distributed Caching
             services.AddScoped<IBookOnShelfRepository, BookOnShelfRepository>();
             services.Decorate<IBookOnShelfRepository, DecoratorBookOnShelfRepository>();
+            services.AddScoped<ICacheService, CacheService>();
 
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
