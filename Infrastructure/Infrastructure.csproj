@@ -38,6 +38,7 @@
     <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
 	  <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Scrutor" Version="4.2.2" />
 	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.1" />
 	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.17" />
 

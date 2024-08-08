@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zw/GQaezI38=",
+  "dgSpecHash": "Boel1mwKtE4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Kiu-Student\\Desktop\\LibraryManagement\\RestAPI\\RestAPI.csproj",
   "expectedPackageFiles": [
@@ -84,6 +84,7 @@
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\nlog.extensions.logging\\1.7.0\\nlog.extensions.logging.1.7.0.nupkg.sha512",
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\nlog.schema\\4.7.15\\nlog.schema.4.7.15.nupkg.sha512",
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\nlog.web\\5.3.11\\nlog.web.5.3.11.nupkg.sha512",
+    "C:\\Users\\Kiu-Student\\.nuget\\packages\\scrutor\\4.2.2\\scrutor.4.2.2.nupkg.sha512",
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\serilog\\4.0.1\\serilog.4.0.1.nupkg.sha512",
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\serilog.aspnetcore\\8.0.2\\serilog.aspnetcore.8.0.2.nupkg.sha512",
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\serilog.extensions.hosting\\8.0.0\\serilog.extensions.hosting.8.0.0.nupkg.sha512",

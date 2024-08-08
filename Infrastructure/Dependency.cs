@@ -28,8 +28,9 @@ namespace Infrastructure
     {
         public static IServiceCollection AddPersistenceService(this IServiceCollection services, IConfiguration configuration)
         {
-            
 
+
+            services.AddMemoryCache();
 
             //configure library db
             services.AddDbContext<LibraryDbContext>(options =>
@@ -80,10 +81,17 @@ namespace Infrastructure
 
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
             services.AddScoped<IAlertRepository, AlertRepository>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();
             services.AddScoped<IBookOnShelfRepository, BookOnShelfRepository>();
+
+
             services.AddScoped<IBookRepository, BookRepository>();
+
+            services.Decorate<IBookRepository, DecoratorBookRepository>();
+
+            
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<ICheckOutRepository, CheckOutRepository>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();

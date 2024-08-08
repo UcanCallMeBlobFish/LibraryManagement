@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8PbpPEFves4=",
+  "dgSpecHash": "bwBzllS3Bo0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Kiu-Student\\Desktop\\LibraryManagement\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -90,6 +90,7 @@
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\nlog.extensions.logging\\1.7.0\\nlog.extensions.logging.1.7.0.nupkg.sha512",
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\nlog.schema\\4.7.15\\nlog.schema.4.7.15.nupkg.sha512",
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\nlog.web\\5.3.11\\nlog.web.5.3.11.nupkg.sha512",
+    "C:\\Users\\Kiu-Student\\.nuget\\packages\\scrutor\\4.2.2\\scrutor.4.2.2.nupkg.sha512",
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Kiu-Student\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
