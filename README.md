@@ -20,6 +20,9 @@ This project is a **Library Management System** built using **.NET**, following 
 - **JWT Authentication**: Secures API endpoints with JSON Web Tokens.
 - **MS SQL Server**: Serves as the database management system.
 - **Global Exception Handling**: Middleware.
+- **InMemory Caching/Scrutor/Decorator Design Pattern for BookRepository**: InmemCaching.
+- - **Redis Distributed Caching**: Implemented using a decorator pattern for the `BookOnShelvesRepository`.
+
 
 
 ## Technologies Used
@@ -35,6 +38,9 @@ This project is a **Library Management System** built using **.NET**, following 
 - **JWT Authentication**
 -  **Serilog**
 -  **Global Exception Handling**
+-  **GOF DesignPatterns/InMemCache**
+-  **Redis Distributed Caching**
+
 
 
 ## Getting Started
@@ -44,6 +50,8 @@ This project is a **Library Management System** built using **.NET**, following 
 - .NET SDK 6.0 or later
 - SQL Server
 - Visual Studio or any preferred IDE
+- Redis (run with Docker)
+
 
 ### Installation
 
@@ -75,7 +83,11 @@ This project is a **Library Management System** built using **.NET**, following 
    ```sh
    dotnet ef database update
    ```
-6. Run the application:
+   //
+   docker pull redis
+   docker run --name my-redis -d -p 6379:6379 redis
+   //
+7. Run the application:
    ```sh
    dotnet run
    ```
