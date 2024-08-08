@@ -486,3 +486,55 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
    at RestAPI.Middleware.GlobalExceptionHandlingMiddleware.Invoke(HttpContext context) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Middleware\GlobalExceptionHandlingMiddleware.cs:line 22
 2024-08-08 18:32:44.160 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 500 null application/json 63.8427ms
+2024-08-08 18:34:30.544 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 18:34:30.933 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 18:34:30.935 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 18:34:30.939 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 18:34:30.941 +04:00 [INF] Hosting environment: Development
+2024-08-08 18:34:30.942 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 18:34:31.165 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 18:34:31.571 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 407.9831ms
+2024-08-08 18:34:31.640 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 18:34:31.648 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 18:34:31.658 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 17.814ms
+2024-08-08 18:34:31.715 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.4222ms
+2024-08-08 18:34:31.824 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 18:34:32.088 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 263.988ms
+2024-08-08 18:34:36.865 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Book - null null
+2024-08-08 18:34:36.975 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 18:34:37.012 +04:00 [INF] Route matched with {action = "Get", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookDto]]] Get() on controller RestAPI.Controllers.BookController (RestAPI).
+2024-08-08 18:34:40.050 +04:00 [INF] Executed DbCommand (71ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CategoryId], [b].[Title]
+FROM [Books] AS [b]
+2024-08-08 18:34:40.236 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 18:34:40.255 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 3235.1088ms
+2024-08-08 18:34:40.260 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 18:34:40.274 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 3408.8395ms
+2024-08-08 18:34:42.635 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Book - null null
+2024-08-08 18:34:42.652 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 18:34:42.657 +04:00 [INF] Route matched with {action = "Get", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookDto]]] Get() on controller RestAPI.Controllers.BookController (RestAPI).
+2024-08-08 18:34:42.683 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 18:34:42.687 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 20.852ms
+2024-08-08 18:34:42.691 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 18:34:42.694 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 58.7024ms
+2024-08-08 18:34:43.536 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Book - null null
+2024-08-08 18:34:43.545 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 18:34:43.547 +04:00 [INF] Route matched with {action = "Get", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookDto]]] Get() on controller RestAPI.Controllers.BookController (RestAPI).
+2024-08-08 18:34:43.568 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 18:34:43.575 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 22.2848ms
+2024-08-08 18:34:43.581 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 18:34:43.584 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 48.0773ms
+2024-08-08 18:34:44.396 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Book - null null
+2024-08-08 18:34:44.403 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 18:34:44.416 +04:00 [INF] Route matched with {action = "Get", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookDto]]] Get() on controller RestAPI.Controllers.BookController (RestAPI).
+2024-08-08 18:34:44.428 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 18:34:44.435 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 8.3252ms
+2024-08-08 18:34:44.442 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 18:34:44.454 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 58.4316ms
+2024-08-08 18:34:45.033 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Book - null null
+2024-08-08 18:34:45.038 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 18:34:45.040 +04:00 [INF] Route matched with {action = "Get", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookDto]]] Get() on controller RestAPI.Controllers.BookController (RestAPI).
+2024-08-08 18:34:45.046 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 18:34:45.050 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 5.8247ms
+2024-08-08 18:34:45.058 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 18:34:45.061 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 27.8547ms
