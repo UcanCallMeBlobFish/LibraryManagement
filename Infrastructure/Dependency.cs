@@ -30,7 +30,17 @@ namespace Infrastructure
         {
 
 
+            //inmem
             services.AddMemoryCache();
+
+            //reddis distributed
+            services.AddStackExchangeRedisCache(redisOptions =>
+            {
+                string connection = configuration.GetConnectionString("redis");
+
+                redisOptions.Configuration = "localhost:6379";
+
+            });
 
             //configure library db
             services.AddDbContext<LibraryDbContext>(options =>
@@ -84,14 +94,17 @@ namespace Infrastructure
 
             services.AddScoped<IAlertRepository, AlertRepository>();
             services.AddScoped<IAuthorRepository, AuthorRepository>();
-            services.AddScoped<IBookOnShelfRepository, BookOnShelfRepository>();
 
 
+            //InMem Caching
             services.AddScoped<IBookRepository, BookRepository>();
-
             services.Decorate<IBookRepository, DecoratorBookRepository>();
 
-            
+            //Redis Distributed Caching
+            services.AddScoped<IBookOnShelfRepository, BookOnShelfRepository>();
+            services.Decorate<IBookOnShelfRepository, DecoratorBookOnShelfRepository>();
+
+
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<ICheckOutRepository, CheckOutRepository>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();

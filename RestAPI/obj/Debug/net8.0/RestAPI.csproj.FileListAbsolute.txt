@@ -105,3 +105,8 @@ C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\bin\Debug\net8.0\Serilog.
 C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\bin\Debug\net8.0\Serilog.Sinks.File.dll
 C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\bin\Debug\net8.0\Scrutor.dll
+C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\bin\Debug\net8.0\StackExchange.Redis.dll

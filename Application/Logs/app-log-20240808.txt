@@ -538,3 +538,615 @@ FROM [Books] AS [b]
 2024-08-08 18:34:45.050 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 5.8247ms
 2024-08-08 18:34:45.058 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
 2024-08-08 18:34:45.061 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 27.8547ms
+2024-08-08 19:50:31.633 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:50:31.897 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 19:50:31.900 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 19:50:31.903 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 19:50:31.904 +04:00 [INF] Hosting environment: Development
+2024-08-08 19:50:31.905 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 19:50:33.108 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 19:50:33.390 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 283.8178ms
+2024-08-08 19:50:33.424 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:50:33.436 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 12.7453ms
+2024-08-08 19:50:33.455 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 19:50:33.508 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.1513ms
+2024-08-08 19:50:33.583 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 19:50:33.847 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 263.6986ms
+2024-08-08 19:50:45.083 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-08 19:50:45.180 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:45.221 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:50:48.582 +04:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-08 19:50:48.725 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 19:50:48.745 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 3516.1718ms
+2024-08-08 19:50:48.748 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:48.760 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 3677.1225ms
+2024-08-08 19:50:54.762 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-08 19:50:54.769 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:54.771 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:50:54.853 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-08 19:50:54.858 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 19:50:54.860 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 86.6377ms
+2024-08-08 19:50:54.863 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:54.864 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 102.5853ms
+2024-08-08 19:50:55.345 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-08 19:50:55.351 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:55.362 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:50:55.396 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-08 19:50:55.399 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 19:50:55.401 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 36.6706ms
+2024-08-08 19:50:55.405 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:55.407 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 61.5929ms
+2024-08-08 19:50:55.932 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-08 19:50:55.935 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:55.937 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:50:55.943 +04:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-08 19:50:55.947 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 19:50:55.949 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 6.9027ms
+2024-08-08 19:50:55.950 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:55.952 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 19.9504ms
+2024-08-08 19:50:56.414 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-08 19:50:56.417 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:56.420 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:50:56.426 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-08 19:50:56.430 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 19:50:56.433 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 10.1629ms
+2024-08-08 19:50:56.434 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:56.436 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 22.2445ms
+2024-08-08 19:50:56.826 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-08 19:50:56.830 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:56.831 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:50:56.837 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-08 19:50:56.841 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 19:50:56.843 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 8.7984ms
+2024-08-08 19:50:56.845 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:56.846 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 19.8897ms
+2024-08-08 19:50:57.255 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-08 19:50:57.258 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:57.259 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:50:57.265 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-08 19:50:57.268 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 19:50:57.271 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 9.5392ms
+2024-08-08 19:50:57.273 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:57.274 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 19.0424ms
+2024-08-08 19:50:57.671 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-08 19:50:57.677 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:57.681 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:50:57.690 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-08 19:50:57.695 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 19:50:57.698 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 11.611ms
+2024-08-08 19:50:57.700 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:57.705 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 33.8471ms
+2024-08-08 19:50:58.132 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-08 19:50:58.136 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:58.138 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:50:58.145 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-08 19:50:58.149 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 19:50:58.151 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 9.6157ms
+2024-08-08 19:50:58.153 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:50:58.155 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 22.5222ms
+2024-08-08 19:51:39.314 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:51:39.826 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 19:51:39.828 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 19:51:39.831 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 19:51:39.833 +04:00 [INF] Hosting environment: Development
+2024-08-08 19:51:39.834 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 19:51:40.965 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 19:51:41.351 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:51:41.351 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 396.2669ms
+2024-08-08 19:51:41.364 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.4011ms
+2024-08-08 19:51:41.411 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 19:51:41.593 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 182.2947ms
+2024-08-08 19:51:41.703 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 19:51:42.076 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 373.5098ms
+2024-08-08 19:52:24.803 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:52:25.467 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 19:52:25.469 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 19:52:25.472 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 19:52:25.474 +04:00 [INF] Hosting environment: Development
+2024-08-08 19:52:25.475 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 19:52:26.379 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 19:52:26.732 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 362.7221ms
+2024-08-08 19:52:26.749 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:52:26.759 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.2237ms
+2024-08-08 19:52:26.802 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 19:52:26.869 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.1291ms
+2024-08-08 19:52:26.985 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 19:52:27.346 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 361.9718ms
+2024-08-08 19:52:36.165 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-08 19:52:36.258 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:52:36.296 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:52:40.456 +04:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-08 19:52:40.632 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 19:52:40.660 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 4355.059ms
+2024-08-08 19:52:40.664 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:52:40.679 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 4514.9074ms
+2024-08-08 19:52:47.637 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 19:52:47.645 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:52:47.666 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:52:56.395 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 8724.6311ms
+2024-08-08 19:52:56.403 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:53:00.334 +04:00 [ERR] exception occur
+System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 870
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 676
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 666
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.GetConfiguredOptions()
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectSlowAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at Infrastructure.Repositories.DecoratorBookOnShelfRepository.Get(Int32 id) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\Repositories\DecoratorBookOnShelfRepository.cs:line 43
+   at Application.Features.Handlers.Query.BookOnShelves.GetBookOnShelvesQueryHandler.Handle(GetBookOnShelvesQuery request, CancellationToken cancellationToken) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\Features\Handlers\Query\BookOnShelves\GetBookOnShelvesQueryHandler.cs:line 28
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at RestAPI.Controllers.BookOnShelfController.Get(Int32 id) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Controllers\BookOnShelfController.cs:line 33
+   at lambda_method65(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at RestAPI.Middleware.GlobalExceptionHandlingMiddleware.Invoke(HttpContext context) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Middleware\GlobalExceptionHandlingMiddleware.cs:line 22
+2024-08-08 19:53:06.318 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 400 null application/json 18681.3599ms
+2024-08-08 19:53:11.368 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 19:53:11.374 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:53:11.376 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:53:23.907 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 12528.2118ms
+2024-08-08 19:53:23.914 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:53:33.100 +04:00 [ERR] exception occur
+System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 870
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 676
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 666
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.GetConfiguredOptions()
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectSlowAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at Infrastructure.Repositories.DecoratorBookOnShelfRepository.Get(Int32 id) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\Repositories\DecoratorBookOnShelfRepository.cs:line 43
+   at Application.Features.Handlers.Query.BookOnShelves.GetBookOnShelvesQueryHandler.Handle(GetBookOnShelvesQuery request, CancellationToken cancellationToken) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\Features\Handlers\Query\BookOnShelves\GetBookOnShelvesQueryHandler.cs:line 28
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at RestAPI.Controllers.BookOnShelfController.Get(Int32 id) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Controllers\BookOnShelfController.cs:line 33
+   at lambda_method65(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at RestAPI.Middleware.GlobalExceptionHandlingMiddleware.Invoke(HttpContext context) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Middleware\GlobalExceptionHandlingMiddleware.cs:line 22
+2024-08-08 19:53:34.000 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 400 null application/json 22632.6035ms
+2024-08-08 19:53:37.774 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 19:53:48.705 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:53:48.707 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:54:03.889 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 15176.5628ms
+2024-08-08 19:54:03.896 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:55:41.127 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:55:41.442 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 19:55:41.444 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 19:55:41.448 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 19:55:41.449 +04:00 [INF] Hosting environment: Development
+2024-08-08 19:55:41.450 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 19:55:42.177 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 19:55:42.439 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 264.5248ms
+2024-08-08 19:55:42.526 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 19:55:42.526 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:55:42.551 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 24.2457ms
+2024-08-08 19:55:42.618 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.6206ms
+2024-08-08 19:55:42.683 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 19:55:42.884 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.0402ms
+2024-08-08 19:55:51.086 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 19:55:51.133 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:55:51.173 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:55:51.591 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 409.4832ms
+2024-08-08 19:55:51.593 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:55:51.595 +04:00 [ERR] exception occur
+System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 870
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 676
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 666
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.GetConfiguredOptions()
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectSlowAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at Infrastructure.Repositories.DecoratorBookOnShelfRepository.Get(Int32 id) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\Repositories\DecoratorBookOnShelfRepository.cs:line 43
+   at Application.Features.Handlers.Query.BookOnShelves.GetBookOnShelvesQueryHandler.Handle(GetBookOnShelvesQuery request, CancellationToken cancellationToken) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\Features\Handlers\Query\BookOnShelves\GetBookOnShelvesQueryHandler.cs:line 28
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at RestAPI.Controllers.BookOnShelfController.Get(Int32 id) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Controllers\BookOnShelfController.cs:line 33
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at RestAPI.Middleware.GlobalExceptionHandlingMiddleware.Invoke(HttpContext context) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Middleware\GlobalExceptionHandlingMiddleware.cs:line 22
+2024-08-08 19:55:51.722 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 400 null application/json 635.8165ms
+2024-08-08 19:56:10.292 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:56:10.491 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 19:56:10.492 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 19:56:10.495 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 19:56:10.496 +04:00 [INF] Hosting environment: Development
+2024-08-08 19:56:10.498 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 19:56:10.680 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 19:56:10.894 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 214.5333ms
+2024-08-08 19:56:10.939 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:56:10.939 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 19:56:10.948 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.278ms
+2024-08-08 19:56:10.979 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.0941ms
+2024-08-08 19:56:11.014 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 19:56:11.185 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 170.2748ms
+2024-08-08 19:56:18.664 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:56:18.870 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 19:56:18.873 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 19:56:18.877 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 19:56:18.879 +04:00 [INF] Hosting environment: Development
+2024-08-08 19:56:18.880 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 19:56:19.662 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 19:56:19.884 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 221.9411ms
+2024-08-08 19:56:19.908 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 19:56:19.945 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:56:19.953 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.9938ms
+2024-08-08 19:56:19.957 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.1278ms
+2024-08-08 19:56:20.004 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 19:56:20.179 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 174.2815ms
+2024-08-08 19:56:29.436 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 19:56:29.477 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:56:29.508 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:56:29.813 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 300.4452ms
+2024-08-08 19:56:29.816 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:56:29.818 +04:00 [ERR] exception occur
+System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 870
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 676
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 666
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.GetConfiguredOptions()
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectSlowAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at Infrastructure.Repositories.DecoratorBookOnShelfRepository.Get(Int32 id) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\Repositories\DecoratorBookOnShelfRepository.cs:line 43
+   at Application.Features.Handlers.Query.BookOnShelves.GetBookOnShelvesQueryHandler.Handle(GetBookOnShelvesQuery request, CancellationToken cancellationToken) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\Features\Handlers\Query\BookOnShelves\GetBookOnShelvesQueryHandler.cs:line 28
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at RestAPI.Controllers.BookOnShelfController.Get(Int32 id) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Controllers\BookOnShelfController.cs:line 33
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at RestAPI.Middleware.GlobalExceptionHandlingMiddleware.Invoke(HttpContext context) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Middleware\GlobalExceptionHandlingMiddleware.cs:line 22
+2024-08-08 19:56:29.891 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 400 null application/json 454.9258ms
+2024-08-08 19:56:44.440 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:56:45.240 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 19:56:45.242 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 19:56:45.244 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 19:56:45.246 +04:00 [INF] Hosting environment: Development
+2024-08-08 19:56:45.247 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 19:56:46.905 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 19:56:47.355 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 460.8781ms
+2024-08-08 19:56:47.411 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 19:56:47.426 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:56:47.527 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 100.8809ms
+2024-08-08 19:56:47.588 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 177.7955ms
+2024-08-08 19:56:47.661 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 19:56:47.933 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 272.3023ms
+2024-08-08 19:56:57.495 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 19:56:57.581 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:56:57.624 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:57:30.129 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:57:30.917 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 19:57:30.919 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 19:57:30.923 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 19:57:30.958 +04:00 [INF] Hosting environment: Development
+2024-08-08 19:57:30.959 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 19:57:32.116 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 19:57:32.690 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 586.8666ms
+2024-08-08 19:57:32.764 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 19:57:32.764 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:57:32.812 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 45.0152ms
+2024-08-08 19:57:32.865 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.5564ms
+2024-08-08 19:57:32.949 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 19:57:33.316 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 366.9802ms
+2024-08-08 19:57:41.118 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 19:57:41.193 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:57:41.235 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:57:57.376 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:57:57.599 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 19:57:57.601 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 19:57:57.605 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 19:57:57.607 +04:00 [INF] Hosting environment: Development
+2024-08-08 19:57:57.608 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 19:57:58.362 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 19:57:58.623 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 263.2062ms
+2024-08-08 19:57:58.647 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:57:58.657 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.7388ms
+2024-08-08 19:57:58.677 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 19:57:58.735 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.0716ms
+2024-08-08 19:57:58.811 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 19:57:59.005 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 194.5326ms
+2024-08-08 19:58:11.291 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 19:58:11.562 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 19:58:11.563 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 19:58:11.567 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 19:58:11.569 +04:00 [INF] Hosting environment: Development
+2024-08-08 19:58:11.570 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 19:58:12.363 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 19:58:12.675 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 314.4651ms
+2024-08-08 19:58:12.696 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 19:58:12.704 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.3071ms
+2024-08-08 19:58:12.734 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 19:58:12.782 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.3376ms
+2024-08-08 19:58:12.879 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 19:58:13.630 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 750.9236ms
+2024-08-08 19:58:26.507 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 19:58:26.558 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:58:26.597 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 19:58:27.081 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 475.7592ms
+2024-08-08 19:58:27.084 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 19:58:27.086 +04:00 [ERR] exception occur
+System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 870
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 676
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 666
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCacheOptions.GetConfiguredOptions()
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectSlowAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at Infrastructure.Repositories.DecoratorBookOnShelfRepository.Get(Int32 id) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\Repositories\DecoratorBookOnShelfRepository.cs:line 43
+   at Application.Features.Handlers.Query.BookOnShelves.GetBookOnShelvesQueryHandler.Handle(GetBookOnShelvesQuery request, CancellationToken cancellationToken) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\Features\Handlers\Query\BookOnShelves\GetBookOnShelvesQueryHandler.cs:line 28
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at RestAPI.Controllers.BookOnShelfController.Get(Int32 id) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Controllers\BookOnShelfController.cs:line 33
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at RestAPI.Middleware.GlobalExceptionHandlingMiddleware.Invoke(HttpContext context) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Middleware\GlobalExceptionHandlingMiddleware.cs:line 22
+2024-08-08 19:58:27.173 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 400 null application/json 666.5964ms
+2024-08-08 20:00:39.504 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 20:00:40.134 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 20:00:40.136 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 20:00:40.139 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 20:00:40.140 +04:00 [INF] Hosting environment: Development
+2024-08-08 20:00:40.142 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 20:00:40.560 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 20:00:40.774 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 215.4395ms
+2024-08-08 20:00:40.897 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 20:00:40.908 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.2949ms
+2024-08-08 20:00:40.910 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 20:00:40.957 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.7471ms
+2024-08-08 20:00:41.150 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 20:00:41.327 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 177.1983ms
+2024-08-08 20:00:47.849 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 20:00:47.860 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 11.0145ms
+2024-08-08 20:00:47.906 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 20:00:47.909 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 20:00:47.916 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.1437ms
+2024-08-08 20:00:47.927 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.5035ms
+2024-08-08 20:00:47.983 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 20:00:48.028 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.2934ms
+2024-08-08 20:00:48.814 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 20:00:48.820 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 6.0489ms
+2024-08-08 20:00:48.863 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 20:00:48.864 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 20:00:48.874 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.4097ms
+2024-08-08 20:00:48.875 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.497ms
+2024-08-08 20:00:48.917 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 20:00:48.952 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.0223ms
+2024-08-08 20:00:49.181 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 20:00:49.201 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 20.6458ms
+2024-08-08 20:00:49.314 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 20:00:49.321 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.641ms
+2024-08-08 20:00:49.329 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 20:00:49.337 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.8861ms
+2024-08-08 20:00:49.396 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 20:00:49.426 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.8031ms
+2024-08-08 20:00:59.336 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 20:00:59.371 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:00:59.396 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 20:01:03.820 +04:00 [INF] Executed DbCommand (47ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+WHERE [b].[Id] = @__p_0
+2024-08-08 20:01:04.264 +04:00 [INF] Executing OkObjectResult, writing value of type 'Application.DTOs.BookOnShelvesDto'.
+2024-08-08 20:01:04.288 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 4882.7661ms
+2024-08-08 20:01:04.290 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:04.302 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 200 null application/json; charset=utf-8 4965.6382ms
+2024-08-08 20:01:10.730 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 20:01:10.739 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:10.741 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 20:01:10.783 +04:00 [INF] Executing OkObjectResult, writing value of type 'Application.DTOs.BookOnShelvesDto'.
+2024-08-08 20:01:10.785 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 40.6728ms
+2024-08-08 20:01:10.787 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:10.788 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 200 null application/json; charset=utf-8 58.3033ms
+2024-08-08 20:01:11.478 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 20:01:11.484 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:11.485 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 20:01:11.498 +04:00 [INF] Executing OkObjectResult, writing value of type 'Application.DTOs.BookOnShelvesDto'.
+2024-08-08 20:01:11.500 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 12.5144ms
+2024-08-08 20:01:11.502 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:11.503 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 200 null application/json; charset=utf-8 25.7528ms
+2024-08-08 20:01:11.939 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 20:01:11.942 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:11.946 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 20:01:11.958 +04:00 [INF] Executing OkObjectResult, writing value of type 'Application.DTOs.BookOnShelvesDto'.
+2024-08-08 20:01:11.961 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 11.3979ms
+2024-08-08 20:01:11.966 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:11.968 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 200 null application/json; charset=utf-8 29.1576ms
+2024-08-08 20:01:17.245 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 20:01:17.248 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:17.249 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 20:01:17.255 +04:00 [INF] Executing OkObjectResult, writing value of type 'Application.DTOs.BookOnShelvesDto'.
+2024-08-08 20:01:17.257 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 5.3962ms
+2024-08-08 20:01:17.260 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:17.262 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 200 null application/json; charset=utf-8 16.1575ms
+2024-08-08 20:01:18.103 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 20:01:18.107 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:18.108 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 20:01:18.114 +04:00 [INF] Executing OkObjectResult, writing value of type 'Application.DTOs.BookOnShelvesDto'.
+2024-08-08 20:01:18.116 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 5.7068ms
+2024-08-08 20:01:18.118 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:18.119 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 200 null application/json; charset=utf-8 15.7745ms
+2024-08-08 20:01:29.719 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/12 - null null
+2024-08-08 20:01:29.722 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:29.723 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 20:01:29.804 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+WHERE [b].[Id] = @__p_0
+2024-08-08 20:01:29.828 +04:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2024-08-08 20:01:29.830 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 103.8567ms
+2024-08-08 20:01:29.831 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:29.832 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/12 - 204 null null 112.8962ms
+2024-08-08 20:01:40.575 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 20:01:40.578 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:40.580 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 20:01:40.586 +04:00 [INF] Executing OkObjectResult, writing value of type 'Application.DTOs.BookOnShelvesDto'.
+2024-08-08 20:01:40.588 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 5.2923ms
+2024-08-08 20:01:40.589 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:01:40.591 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - 200 null application/json; charset=utf-8 15.9742ms
+2024-08-08 20:01:57.643 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 20:01:58.186 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 20:01:58.188 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 20:01:58.191 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 20:01:58.193 +04:00 [INF] Hosting environment: Development
+2024-08-08 20:01:58.195 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 20:01:59.317 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 20:01:59.816 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 508.2715ms
+2024-08-08 20:01:59.821 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 20:01:59.837 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 15.8592ms
+2024-08-08 20:01:59.860 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 20:01:59.928 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.7177ms
+2024-08-08 20:02:00.013 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 20:02:00.302 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 289.0254ms
+2024-08-08 20:02:08.094 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf/1 - null null
+2024-08-08 20:02:08.178 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-08 20:02:08.231 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.BookOnShelvesDto]] Get(Int32) on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-08 20:04:51.299 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-08 20:04:51.659 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-08 20:04:51.661 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-08 20:04:51.664 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-08 20:04:51.666 +04:00 [INF] Hosting environment: Development
+2024-08-08 20:04:51.666 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-08 20:04:52.536 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-08 20:04:52.792 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 259.3072ms
+2024-08-08 20:04:52.816 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-08 20:04:52.825 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.0905ms
+2024-08-08 20:04:52.861 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-08 20:04:52.916 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.7606ms
+2024-08-08 20:04:52.988 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-08 20:04:53.239 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 250.4393ms
+2024-08-08 20:04:59.064 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Book - null null
+2024-08-08 20:04:59.100 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 20:04:59.121 +04:00 [INF] Route matched with {action = "Get", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookDto]]] Get() on controller RestAPI.Controllers.BookController (RestAPI).
+2024-08-08 20:05:01.014 +04:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[CategoryId], [b].[Title]
+FROM [Books] AS [b]
+2024-08-08 20:05:01.116 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 20:05:01.127 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 2000.2651ms
+2024-08-08 20:05:01.129 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 20:05:01.139 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 2074.6267ms
+2024-08-08 20:05:03.302 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Book - null null
+2024-08-08 20:05:03.310 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 20:05:03.312 +04:00 [INF] Route matched with {action = "Get", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookDto]]] Get() on controller RestAPI.Controllers.BookController (RestAPI).
+2024-08-08 20:05:03.323 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 20:05:03.329 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 13.5123ms
+2024-08-08 20:05:03.332 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 20:05:03.334 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 32.2417ms
+2024-08-08 20:05:03.923 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Book - null null
+2024-08-08 20:05:03.934 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 20:05:03.936 +04:00 [INF] Route matched with {action = "Get", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookDto]]] Get() on controller RestAPI.Controllers.BookController (RestAPI).
+2024-08-08 20:05:03.953 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 20:05:03.955 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 16.5041ms
+2024-08-08 20:05:03.957 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 20:05:03.960 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 37.1121ms
+2024-08-08 20:05:04.403 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Book - null null
+2024-08-08 20:05:04.407 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 20:05:04.408 +04:00 [INF] Route matched with {action = "Get", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookDto]]] Get() on controller RestAPI.Controllers.BookController (RestAPI).
+2024-08-08 20:05:04.412 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 20:05:04.415 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 3.6415ms
+2024-08-08 20:05:04.416 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 20:05:04.418 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 14.4079ms
+2024-08-08 20:05:04.579 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Book - null null
+2024-08-08 20:05:04.583 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 20:05:04.584 +04:00 [INF] Route matched with {action = "Get", controller = "Book"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookDto]]] Get() on controller RestAPI.Controllers.BookController (RestAPI).
+2024-08-08 20:05:04.588 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-08 20:05:04.590 +04:00 [INF] Executed action RestAPI.Controllers.BookController.Get (RestAPI) in 3.2197ms
+2024-08-08 20:05:04.592 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookController.Get (RestAPI)'
+2024-08-08 20:05:04.595 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Book - 200 null application/json; charset=utf-8 15.3382ms
