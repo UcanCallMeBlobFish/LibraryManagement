@@ -19,6 +19,8 @@ This project is a **Library Management System** built using **.NET**, following 
 - **Identity Framework**: Manages user authentication and authorization.
 - **JWT Authentication**: Secures API endpoints with JSON Web Tokens.
 - **MS SQL Server**: Serves as the database management system.
+- **Global Exception Handling**: Middleware.
+
 
 ## Technologies Used
 
@@ -31,7 +33,8 @@ This project is a **Library Management System** built using **.NET**, following 
 - **ASP.NET Core Web API**
 - **Identity Framework**
 - **JWT Authentication**
--  **NLog**
+-  **Serilog**
+-  **Global Exception Handling**
 
 
 ## Getting Started
