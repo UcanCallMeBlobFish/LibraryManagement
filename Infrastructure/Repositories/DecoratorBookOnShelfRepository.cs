@@ -45,9 +45,13 @@ namespace Infrastructure.Repositories
             BookOnShelves? book;
             //there is no such a thing in a redis, so lets return and store too.
             if (string.IsNullOrEmpty(cachedMember)) 
-            { 
+            {
+                var cacheOptions = new DistributedCacheEntryOptions
+                {
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(60)
+                };
                 book = await _bookOnShelfRepository.Get(id);
-                await _distributedCache.SetStringAsync(key,JsonConvert.SerializeObject(book));
+                await _distributedCache.SetStringAsync(key,JsonConvert.SerializeObject(book), cacheOptions);
 
                 return book;
             } 
