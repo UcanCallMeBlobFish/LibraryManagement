@@ -40,6 +40,9 @@ namespace Application.DTOs
         public int BookId { get; set; }
         public int EditorId { get; set; }
         public ICollection<int> CheckoutIds { get; set; }
+
+        public bool IsAvailable { get; set; } = true;
+
     }
 
 }

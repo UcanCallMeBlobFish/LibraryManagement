@@ -1,0 +1,461 @@
+2024-08-11 01:57:43.909 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 01:57:44.853 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 01:57:44.855 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 01:57:44.859 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 01:57:44.861 +04:00 [INF] Hosting environment: Development
+2024-08-11 01:57:44.862 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 01:57:45.798 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 01:57:46.175 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 379.1612ms
+2024-08-11 01:57:46.245 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 01:57:46.245 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 01:57:46.253 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.4073ms
+2024-08-11 01:57:46.319 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.7016ms
+2024-08-11 01:57:46.405 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 01:57:46.671 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 266.0406ms
+2024-08-11 01:57:58.980 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-11 01:57:59.023 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 01:57:59.046 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-11 01:58:02.639 +04:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[IsAvailable], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-11 01:58:02.780 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 01:58:02.800 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 3745.8029ms
+2024-08-11 01:58:02.807 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 01:58:02.818 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 3838.605ms
+2024-08-11 01:59:22.828 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 01:59:23.011 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 01:59:23.012 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 01:59:23.015 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 01:59:23.016 +04:00 [INF] Hosting environment: Development
+2024-08-11 01:59:23.017 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 01:59:23.510 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 01:59:23.713 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 203.8801ms
+2024-08-11 01:59:23.768 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 01:59:23.770 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 01:59:23.787 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 19.2741ms
+2024-08-11 01:59:23.827 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.2818ms
+2024-08-11 01:59:23.886 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 01:59:24.080 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 194.2011ms
+2024-08-11 01:59:30.588 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-11 01:59:30.618 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 01:59:30.637 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-11 01:59:32.284 +04:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[IsAvailable], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-11 01:59:32.398 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 01:59:32.413 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 1769.8035ms
+2024-08-11 01:59:32.415 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 01:59:32.424 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 1836.3074ms
+2024-08-11 01:59:49.367 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Checkout - null null
+2024-08-11 01:59:49.375 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 01:59:49.382 +04:00 [INF] Route matched with {action = "Get", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.CheckoutDto]]] Get() on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 01:59:49.459 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[BookOnShelvesId], [c].[CheckoutDate], [c].[CustomerId], [c].[IsReturned], [c].[ReturnDate]
+FROM [Checkouts] AS [c]
+2024-08-11 01:59:49.468 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.CheckoutDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 01:59:49.477 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Get (RestAPI) in 91.9788ms
+2024-08-11 01:59:49.478 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 01:59:49.480 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Checkout - 200 null application/json; charset=utf-8 112.8199ms
+2024-08-11 02:00:04.068 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Customer - null null
+2024-08-11 02:00:04.074 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CustomerController.Get (RestAPI)'
+2024-08-11 02:00:04.079 +04:00 [INF] Route matched with {action = "Get", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.CustomerDto]]] Get() on controller RestAPI.Controllers.CustomerController (RestAPI).
+2024-08-11 02:00:04.108 +04:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Username], [c].[Email], [c].[LastName], [c].[Name], [c].[Status]
+FROM [Customers] AS [c]
+2024-08-11 02:00:04.134 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.CustomerDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:00:04.138 +04:00 [INF] Executed action RestAPI.Controllers.CustomerController.Get (RestAPI) in 56.256ms
+2024-08-11 02:00:04.140 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CustomerController.Get (RestAPI)'
+2024-08-11 02:00:04.142 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Customer - 200 null application/json; charset=utf-8 73.5724ms
+2024-08-11 02:00:14.662 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7295/api/Checkout - application/json 180
+2024-08-11 02:00:14.677 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Post (RestAPI)'
+2024-08-11 02:00:14.692 +04:00 [INF] Route matched with {action = "Post", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Int32]] Post(Application.DTOs.CheckoutCreateDto) on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:00:14.878 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Post (RestAPI) in 182.9627ms
+2024-08-11 02:00:14.880 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Post (RestAPI)'
+2024-08-11 02:00:14.881 +04:00 [ERR] exception occur
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Application.Features.Handlers.Command.Checkout.CreateCheckoutCommandHandler.Handle(CreateCheckoutCommand request, CancellationToken cancellationToken) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\Features\Handlers\Command\Checkout\CreateCheckoutCommandHandler.cs:line 45
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at RestAPI.Controllers.CheckoutController.Post(CheckoutCreateDto checkOut) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Controllers\CheckoutController.cs:line 40
+   at lambda_method133(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at RestAPI.Middleware.GlobalExceptionHandlingMiddleware.Invoke(HttpContext context) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Middleware\GlobalExceptionHandlingMiddleware.cs:line 22
+2024-08-11 02:00:15.064 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7295/api/Checkout - 500 null application/json 401.5501ms
+2024-08-11 02:02:26.969 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Checkout - null null
+2024-08-11 02:02:26.973 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:02:26.975 +04:00 [INF] Route matched with {action = "Get", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.CheckoutDto]]] Get() on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:02:26.984 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[BookOnShelvesId], [c].[CheckoutDate], [c].[CustomerId], [c].[IsReturned], [c].[ReturnDate]
+FROM [Checkouts] AS [c]
+2024-08-11 02:02:26.989 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.CheckoutDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:02:26.993 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Get (RestAPI) in 16.03ms
+2024-08-11 02:02:26.994 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:02:26.996 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Checkout - 200 null application/json; charset=utf-8 26.7926ms
+2024-08-11 02:02:30.795 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-11 02:02:30.798 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 02:02:30.801 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-11 02:02:30.831 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[IsAvailable], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-11 02:02:30.835 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:02:30.837 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 12.011ms
+2024-08-11 02:02:30.841 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 02:02:30.842 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 46.915ms
+2024-08-11 02:02:47.344 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 02:02:48.012 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 02:02:48.014 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 02:02:48.019 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 02:02:48.021 +04:00 [INF] Hosting environment: Development
+2024-08-11 02:02:48.022 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 02:02:49.336 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:02:49.759 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 432.3593ms
+2024-08-11 02:02:49.771 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:02:49.783 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 12.2169ms
+2024-08-11 02:02:49.832 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:02:49.928 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 97.0097ms
+2024-08-11 02:02:50.000 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:02:50.307 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 307.199ms
+2024-08-11 02:03:46.446 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 02:03:46.682 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 02:03:46.684 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 02:03:46.686 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 02:03:46.687 +04:00 [INF] Hosting environment: Development
+2024-08-11 02:03:46.688 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 02:03:47.192 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:03:47.418 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 226.9848ms
+2024-08-11 02:03:47.432 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:03:47.442 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.7259ms
+2024-08-11 02:03:47.480 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:03:47.528 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.2007ms
+2024-08-11 02:03:47.915 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:03:48.105 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 189.8975ms
+2024-08-11 02:03:58.743 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7295/api/Checkout - application/json 180
+2024-08-11 02:03:58.780 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Post (RestAPI)'
+2024-08-11 02:03:58.803 +04:00 [INF] Route matched with {action = "Post", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Int32]] Post(Application.DTOs.CheckoutCreateDto) on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:03:59.229 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Post (RestAPI) in 419.5823ms
+2024-08-11 02:03:59.232 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Post (RestAPI)'
+2024-08-11 02:03:59.233 +04:00 [ERR] exception occur
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Application.Features.Handlers.Command.Checkout.CreateCheckoutCommandHandler.Handle(CreateCheckoutCommand request, CancellationToken cancellationToken) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Application\Features\Handlers\Command\Checkout\CreateCheckoutCommandHandler.cs:line 45
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at RestAPI.Controllers.CheckoutController.Post(CheckoutCreateDto checkOut) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Controllers\CheckoutController.cs:line 40
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at RestAPI.Middleware.GlobalExceptionHandlingMiddleware.Invoke(HttpContext context) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Middleware\GlobalExceptionHandlingMiddleware.cs:line 22
+2024-08-11 02:03:59.298 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7295/api/Checkout - 500 null application/json 555.0614ms
+2024-08-11 02:04:17.346 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 02:04:17.851 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 02:04:17.853 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 02:04:17.857 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 02:04:17.860 +04:00 [INF] Hosting environment: Development
+2024-08-11 02:04:17.862 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 02:04:18.677 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:04:19.133 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 464.2744ms
+2024-08-11 02:04:19.197 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:04:19.197 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:04:19.210 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.6042ms
+2024-08-11 02:04:19.269 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.6794ms
+2024-08-11 02:04:19.343 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:04:19.606 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 263.7433ms
+2024-08-11 02:05:13.330 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 02:05:13.784 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 02:05:13.786 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 02:05:13.789 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 02:05:13.791 +04:00 [INF] Hosting environment: Development
+2024-08-11 02:05:13.792 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 02:05:14.385 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:05:14.745 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 367.1964ms
+2024-08-11 02:05:14.758 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:05:14.769 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.2764ms
+2024-08-11 02:05:14.811 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:05:14.888 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.1209ms
+2024-08-11 02:05:14.962 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:05:15.202 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 240.6648ms
+2024-08-11 02:05:23.082 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Checkout - null null
+2024-08-11 02:05:23.151 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:05:23.182 +04:00 [INF] Route matched with {action = "Get", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.CheckoutDto]]] Get() on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:05:25.523 +04:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[BookOnShelvesId], [c].[CheckoutDate], [c].[CustomerId], [c].[IsReturned], [c].[ReturnDate]
+FROM [Checkouts] AS [c]
+2024-08-11 02:05:25.605 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.CheckoutDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:05:25.636 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Get (RestAPI) in 2443.1412ms
+2024-08-11 02:05:25.639 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:05:25.660 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Checkout - 200 null application/json; charset=utf-8 2579.5287ms
+2024-08-11 02:05:38.398 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7295/api/Checkout - application/json 180
+2024-08-11 02:05:38.407 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Post (RestAPI)'
+2024-08-11 02:05:38.425 +04:00 [INF] Route matched with {action = "Post", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Int32]] Post(Application.DTOs.CheckoutCreateDto) on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:06:40.557 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 02:06:40.788 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 02:06:40.815 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 02:06:40.822 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 02:06:40.827 +04:00 [INF] Hosting environment: Development
+2024-08-11 02:06:40.831 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 02:06:41.555 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:06:41.862 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 309.8141ms
+2024-08-11 02:06:41.882 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:06:41.890 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.6893ms
+2024-08-11 02:06:41.923 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:06:41.978 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.0689ms
+2024-08-11 02:06:42.106 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:06:42.338 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 231.665ms
+2024-08-11 02:06:50.945 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7295/api/Checkout - application/json 180
+2024-08-11 02:06:50.986 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Post (RestAPI)'
+2024-08-11 02:06:51.010 +04:00 [INF] Route matched with {action = "Post", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Int32]] Post(Application.DTOs.CheckoutCreateDto) on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:06:53.355 +04:00 [INF] Executed DbCommand (76ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[IsAvailable], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+WHERE [b].[Id] = @__p_0
+2024-08-11 02:06:53.865 +04:00 [INF] Executed DbCommand (65ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 450), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [BookOnShelves] SET [IsAvailable] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+INSERT INTO [Checkouts] ([BookOnShelvesId], [CheckoutDate], [CustomerId], [IsReturned], [ReturnDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p2, @p3, @p4, @p5, @p6);
+2024-08-11 02:06:53.919 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-08-11 02:06:53.931 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Post (RestAPI) in 2914.3473ms
+2024-08-11 02:06:53.933 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Post (RestAPI)'
+2024-08-11 02:06:53.945 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7295/api/Checkout - 200 null application/json; charset=utf-8 3000.3561ms
+2024-08-11 02:07:02.081 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-11 02:07:02.086 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 02:07:02.092 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-11 02:07:02.169 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[IsAvailable], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-11 02:07:02.184 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:07:02.192 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 97.7436ms
+2024-08-11 02:07:02.194 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 02:07:02.195 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 114.7199ms
+2024-08-11 02:07:12.635 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Checkout - null null
+2024-08-11 02:07:12.641 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:07:12.647 +04:00 [INF] Route matched with {action = "Get", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.CheckoutDto]]] Get() on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:07:12.670 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[BookOnShelvesId], [c].[CheckoutDate], [c].[CustomerId], [c].[IsReturned], [c].[ReturnDate]
+FROM [Checkouts] AS [c]
+2024-08-11 02:07:12.679 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.CheckoutDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:07:12.687 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Get (RestAPI) in 38.5089ms
+2024-08-11 02:07:12.689 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:07:12.691 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Checkout - 200 null application/json; charset=utf-8 55.2819ms
+2024-08-11 02:15:35.417 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 02:15:35.664 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 02:15:35.666 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 02:15:35.669 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 02:15:35.671 +04:00 [INF] Hosting environment: Development
+2024-08-11 02:15:35.672 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 02:15:36.219 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:15:36.476 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 257.7001ms
+2024-08-11 02:15:36.592 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:15:36.602 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:15:36.603 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.0248ms
+2024-08-11 02:15:36.639 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.2121ms
+2024-08-11 02:15:36.796 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:15:37.136 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 340.1073ms
+2024-08-11 02:15:42.086 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:15:42.094 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 7.839ms
+2024-08-11 02:15:42.134 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:15:42.147 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:15:42.153 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.4986ms
+2024-08-11 02:15:42.154 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.505ms
+2024-08-11 02:15:42.218 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:15:42.265 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.6272ms
+2024-08-11 02:15:46.410 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-11 02:15:46.446 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 02:15:46.463 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-11 02:15:48.020 +04:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[IsAvailable], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-11 02:15:48.122 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:15:48.139 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 1668.9414ms
+2024-08-11 02:15:48.142 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 02:15:48.148 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 1737.9307ms
+2024-08-11 02:15:54.414 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Checkout - null null
+2024-08-11 02:15:54.425 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:15:54.434 +04:00 [INF] Route matched with {action = "Get", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.CheckoutDto]]] Get() on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:15:54.535 +04:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[BookOnShelvesId], [c].[CheckoutDate], [c].[CustomerId], [c].[IsReturned], [c].[ReturnDate]
+FROM [Checkouts] AS [c]
+2024-08-11 02:15:54.599 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.CheckoutDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:15:54.628 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Get (RestAPI) in 190.5135ms
+2024-08-11 02:15:54.630 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:15:54.632 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Checkout - 200 null application/json; charset=utf-8 217.8992ms
+2024-08-11 02:19:35.393 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 02:19:35.566 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 02:19:35.568 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 02:19:35.573 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 02:19:35.575 +04:00 [INF] Hosting environment: Development
+2024-08-11 02:19:35.576 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 02:19:35.669 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:19:35.853 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 185.3317ms
+2024-08-11 02:19:35.939 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:19:35.939 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:19:35.949 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.2312ms
+2024-08-11 02:19:35.977 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.6851ms
+2024-08-11 02:19:36.064 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:19:36.180 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "PUT api/Checkout/{id}" for actions - RestAPI.Controllers.CheckoutController.Put (RestAPI),RestAPI.Controllers.CheckoutController.Return (RestAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-11 02:19:36.209 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 144.9432ms
+2024-08-11 02:19:38.644 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:19:38.659 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 14.5818ms
+2024-08-11 02:19:38.697 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:19:38.700 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:19:38.706 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.9273ms
+2024-08-11 02:19:38.717 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.2778ms
+2024-08-11 02:19:38.811 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:19:38.843 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "PUT api/Checkout/{id}" for actions - RestAPI.Controllers.CheckoutController.Put (RestAPI),RestAPI.Controllers.CheckoutController.Return (RestAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-11 02:19:38.857 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 46.2892ms
+2024-08-11 02:19:47.965 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:19:47.972 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 6.4028ms
+2024-08-11 02:19:48.020 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:19:48.032 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.5381ms
+2024-08-11 02:19:48.037 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:19:48.042 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.3637ms
+2024-08-11 02:19:48.111 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:19:48.145 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "PUT api/Checkout/{id}" for actions - RestAPI.Controllers.CheckoutController.Put (RestAPI),RestAPI.Controllers.CheckoutController.Return (RestAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-11 02:19:48.159 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 48.3213ms
+2024-08-11 02:20:02.013 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 02:20:02.239 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 02:20:02.250 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 02:20:02.254 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 02:20:02.256 +04:00 [INF] Hosting environment: Development
+2024-08-11 02:20:02.257 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 02:20:56.961 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:20:57.349 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 389.9134ms
+2024-08-11 02:20:57.408 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:20:57.418 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.1255ms
+2024-08-11 02:20:57.425 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:20:57.478 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.8544ms
+2024-08-11 02:20:57.577 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:20:57.766 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "PUT api/Checkout/{id}" for actions - RestAPI.Controllers.CheckoutController.Put (RestAPI),RestAPI.Controllers.CheckoutController.Return (RestAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-11 02:20:57.802 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 224.604ms
+2024-08-11 02:22:13.722 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 02:22:13.963 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 02:22:13.965 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 02:22:13.970 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 02:22:13.972 +04:00 [INF] Hosting environment: Development
+2024-08-11 02:22:13.973 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 02:22:14.491 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:22:14.725 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 235.0927ms
+2024-08-11 02:22:14.768 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:22:14.768 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:22:14.778 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.6173ms
+2024-08-11 02:22:14.832 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.9566ms
+2024-08-11 02:22:14.929 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:22:15.215 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 286.2376ms
+2024-08-11 02:22:17.540 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:22:17.555 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 14.9755ms
+2024-08-11 02:22:17.588 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:22:17.601 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:22:17.604 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 3.5525ms
+2024-08-11 02:22:17.607 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.3252ms
+2024-08-11 02:22:17.671 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:22:17.722 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.6235ms
+2024-08-11 02:22:23.408 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Checkout - null null
+2024-08-11 02:22:23.450 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:22:23.474 +04:00 [INF] Route matched with {action = "Get", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.CheckoutDto]]] Get() on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:22:24.993 +04:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[BookOnShelvesId], [c].[CheckoutDate], [c].[CustomerId], [c].[IsReturned], [c].[ReturnDate]
+FROM [Checkouts] AS [c]
+2024-08-11 02:22:25.097 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.CheckoutDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:22:25.120 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Get (RestAPI) in 1637.8509ms
+2024-08-11 02:22:25.122 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:22:25.131 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Checkout - 200 null application/json; charset=utf-8 1723.0024ms
+2024-08-11 02:22:37.541 +04:00 [INF] Request starting HTTP/2 PUT https://localhost:7295/api/Checkout/return/1 - null 0
+2024-08-11 02:22:37.562 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Return (RestAPI)'
+2024-08-11 02:22:37.574 +04:00 [INF] Route matched with {action = "Return", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Return(Int32) on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:22:37.777 +04:00 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[BookOnShelvesId], [c].[CheckoutDate], [c].[CustomerId], [c].[IsReturned], [c].[ReturnDate]
+FROM [Checkouts] AS [c]
+WHERE [c].[Id] = @__p_0
+2024-08-11 02:22:37.805 +04:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[IsAvailable], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+WHERE [b].[Id] = @__p_0
+2024-08-11 02:22:37.979 +04:00 [INF] Executed DbCommand (10ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p4='?' (DbType = Int32), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [BookOnShelves] SET [IsAvailable] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+UPDATE [Checkouts] SET [IsReturned] = @p2, [ReturnDate] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2024-08-11 02:22:38.017 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-08-11 02:22:38.020 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Return (RestAPI) in 441.2494ms
+2024-08-11 02:22:38.023 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Return (RestAPI)'
+2024-08-11 02:22:38.025 +04:00 [INF] Request finished HTTP/2 PUT https://localhost:7295/api/Checkout/return/1 - 204 null null 483.9633ms
+2024-08-11 02:22:44.417 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/Checkout - null null
+2024-08-11 02:22:44.424 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:22:44.425 +04:00 [INF] Route matched with {action = "Get", controller = "Checkout"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.CheckoutDto]]] Get() on controller RestAPI.Controllers.CheckoutController (RestAPI).
+2024-08-11 02:22:44.453 +04:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[BookOnShelvesId], [c].[CheckoutDate], [c].[CustomerId], [c].[IsReturned], [c].[ReturnDate]
+FROM [Checkouts] AS [c]
+2024-08-11 02:22:44.459 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.CheckoutDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:22:44.462 +04:00 [INF] Executed action RestAPI.Controllers.CheckoutController.Get (RestAPI) in 34.0433ms
+2024-08-11 02:22:44.464 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.CheckoutController.Get (RestAPI)'
+2024-08-11 02:22:44.468 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Checkout - 200 null application/json; charset=utf-8 50.8131ms
+2024-08-11 02:22:51.518 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/api/BookOnShelf - null null
+2024-08-11 02:22:51.522 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 02:22:51.529 +04:00 [INF] Route matched with {action = "Get", controller = "BookOnShelf"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Application.DTOs.BookOnShelvesDto]]] Get() on controller RestAPI.Controllers.BookOnShelfController (RestAPI).
+2024-08-11 02:22:51.547 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[BookId], [b].[Condition], [b].[Edition], [b].[EditorId], [b].[IsAvailable], [b].[UserNote]
+FROM [BookOnShelves] AS [b]
+2024-08-11 02:22:51.558 +04:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.DTOs.BookOnShelvesDto, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-11 02:22:51.568 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 34.0995ms
+2024-08-11 02:22:51.571 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
+2024-08-11 02:22:51.572 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 53.9615ms

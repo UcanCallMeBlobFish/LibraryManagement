@@ -43,14 +43,17 @@ namespace RestAPI.Controllers
 
         // PUT api/<CheckOutController>/5
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] CheckoutUpdateDto checkOut)
+        public async Task<ActionResult> Put([FromBody] CheckoutUpdateDto checkOut)
         {
-            if (id != checkOut.Id)
-            {
-                return BadRequest();
-            }
-
+           
             await _mediator.Send(new UpdateCheckoutCommand(checkOut));
+            return NoContent();
+        }
+
+        [HttpPut("return/{id}")]
+        public async Task<ActionResult> Return(int id)
+        {
+            await _mediator.Send(new ReturnBookCommand(id));
             return NoContent();
         }
 

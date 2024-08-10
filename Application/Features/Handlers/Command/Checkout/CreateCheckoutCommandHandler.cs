@@ -28,6 +28,7 @@ namespace Application.Features.Handlers.Command.Checkout
             var validator = new CheckoutCreateDtoValidator();
             var validationResult = await validator.ValidateAsync(request.CheckoutCreateDto, cancellationToken);
 
+
             if (!validationResult.IsValid)
             {
                 foreach (var error in validationResult.Errors)
@@ -37,7 +38,17 @@ namespace Application.Features.Handlers.Command.Checkout
                 throw new ArgumentException("Invalid CheckoutCreateDto provided.");
             }
 
+
+
             var checkout = _unitOfWork.Mapper.Map<Domain.Models.Checkout>(request.CheckoutCreateDto);
+
+            var bookOnShelves = await _unitOfWork.BookOnShelves.Get(checkout.BookOnShelvesId);
+
+            if (bookOnShelves is null) throw new ArgumentException("book not available");
+
+            bookOnShelves.IsAvailable = false;
+
+
             await _unitOfWork.CheckOuts.Add(checkout);
             await _unitOfWork.SaveAsync();
 
