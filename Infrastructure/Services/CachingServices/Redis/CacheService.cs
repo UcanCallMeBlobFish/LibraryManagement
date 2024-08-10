@@ -12,7 +12,7 @@ namespace Infrastructure.Services.CachingServices.Redis
     public class CacheService : ICacheService
     {
         private readonly IDistributedCache _distributedCache;
-        private static readonly TimeSpan DefaultExpiration = TimeSpan.FromMinutes(5); // TTL of 5 minutes
+        private static readonly TimeSpan DefaultExpiration = TimeSpan.FromSeconds(5); // TTL of 5 minutes
 
         public CacheService(IDistributedCache distributedCache)
         {
@@ -32,7 +32,7 @@ namespace Infrastructure.Services.CachingServices.Redis
         }
 
 
-        public async Task RemoveAsync<T>(string key, CancellationToken cancellationToken = default) where T : class
+        public async Task RemoveAsync(string key, CancellationToken cancellationToken = default) 
         {
 
             await _distributedCache.RemoveAsync

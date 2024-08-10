@@ -104,7 +104,7 @@ namespace Infrastructure
 
             //Redis Distributed Caching
             services.AddScoped<IBookOnShelfRepository, BookOnShelfRepository>();
-            //services.Decorate<IBookOnShelfRepository, DecoratorBookOnShelfRepository>();
+            services.Decorate<IBookOnShelfRepository, DecoratorBookOnShelfRepository>();
             services.AddScoped<ICacheService, CacheService>();
 
 

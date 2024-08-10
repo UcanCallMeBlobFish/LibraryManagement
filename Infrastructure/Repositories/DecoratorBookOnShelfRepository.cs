@@ -28,16 +28,31 @@ namespace Infrastructure.Repositories
 
         public async Task<BookOnShelves> Add(BookOnShelves entity)
         {
-           return await _bookOnShelfRepository.Add(entity);
+            string key = $"BookOnShelves-{entity.Id}";
+            await _bookOnShelfRepository.Add(entity);
+            await _cacheService.SetAsync(key, entity, cancellationToken: default);
+            await _cacheService.RemoveAsync("AllBookOnShelves");
+            return await _bookOnShelfRepository.Get(entity.Id);
         }
 
         public async Task Delete(BookOnShelves Entity)
         {
+            string key = $"BookOnShelves-{Entity.Id}";
             await _bookOnShelfRepository.Delete(Entity);
+            await _cacheService.RemoveAsync(key, cancellationToken: default);
+
         }
         public async Task Update(BookOnShelves Entity)
         {
+            string key = $"BookOnShelves-{Entity.Id}";
+
             await _bookOnShelfRepository.Update(Entity);
+
+            await _cacheService.RemoveAsync(key, cancellationToken: default);
+            await _cacheService.RemoveAsync("AllBookOnShelves");
+
+            var updatedEntity = await _bookOnShelfRepository.Get(Entity.Id);
+            await _cacheService.SetAsync(key, updatedEntity, cancellationToken: default);
         }
 
         // Using Redis D Caching for functions provided below.
