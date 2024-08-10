@@ -1,7 +1,9 @@
 ﻿using Application.Abstractions.Identity;
+using Application.Abstractions.Library;
 using Application.Models.Identity.JWTModels;
 using Application.Models.Identity.LoginModels;
 using Application.Models.Identity.RegistrationModels;
+using Domain.Models;
 using Infrastructure.IdentityData.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
@@ -22,12 +24,14 @@ namespace Infrastructure.Services.IdentityServices
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly JWTSettings _jwtSettings;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public AuthService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IOptions<JWTSettings> jwtSettings)
+        public AuthService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IOptions<JWTSettings> jwtSettings, IUnitOfWork unitOfWork)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _jwtSettings = jwtSettings.Value;
+            _unitOfWork = unitOfWork;
             
         }
         public async Task<AuthResponse> Login(AuthRequest request)
@@ -147,7 +151,23 @@ namespace Infrastructure.Services.IdentityServices
                 if (result.Succeeded)
                 {
                     await _userManager.AddToRoleAsync(user, "Customer");
+
+                    //Create Domain Customer with the same Username
+                    Customer domainUser = new Customer
+                    {
+                        Username = request.UserName,
+                        Email = request.Email,
+                        Name = request.FirstName,
+                        LastName = request.LastName
+
+                    };
+                    await _unitOfWork.Customers.Add(domainUser);
+                    await _unitOfWork.SaveAsync();
+
                     return new RegistrationResponse() { UserId = user.Id };
+
+
+
                 }
                 else
                 {
