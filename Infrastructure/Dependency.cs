@@ -34,6 +34,9 @@ namespace Infrastructure
         public static IServiceCollection AddPersistenceService(this IServiceCollection services, IConfiguration configuration)
         {
 
+            //Background service
+            services.AddHostedService<ReminderService>();
+
 
             //inmem
             services.AddMemoryCache();
@@ -119,7 +122,7 @@ namespace Infrastructure
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
-            services.AddScoped<IEmailService, EmailService>();
+            services.AddSingleton<IEmailService, EmailService>();
 
             return services;
         }
