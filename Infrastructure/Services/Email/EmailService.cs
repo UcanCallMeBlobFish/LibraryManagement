@@ -40,6 +40,7 @@ namespace Infrastructure.Services.Email
 
             smtp.Connect(_config.GetSection("EmailHost").Value, 587, SecureSocketOptions.StartTls);
 
+           
             smtp.Authenticate(_config.GetSection("EmailUsername").Value, _config.GetSection("EmailPassword").Value);
 
             //send, disconnect.
