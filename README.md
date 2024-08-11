@@ -21,7 +21,9 @@ This project is a **Library Management System** built using **.NET**, following 
 - **MS SQL Server**: Serves as the database management system.
 - **Global Exception Handling**: Middleware.
 - **InMemory Caching/Scrutor/Decorator Design Pattern for BookRepository**: InmemCaching.
-- - **Redis Distributed Caching**: Implemented using a decorator pattern for the `BookOnShelvesRepository`.
+- **Redis Distributed Caching**: Implemented using a decorator pattern for the `BookOnShelvesRepository`.
+- **MailKit** as an email sender.
+- **BackgroundService** to implement autoEmail sender.
 
 
 
@@ -40,6 +42,9 @@ This project is a **Library Management System** built using **.NET**, following 
 -  **Global Exception Handling**
 -  **GOF DesignPatterns/InMemCache**
 -  **Redis Distributed Caching**
+- **MailKit** as an email sender.
+- **BackgroundService** to implement autoEmail sender.
+
 
 
 
@@ -157,7 +162,6 @@ For any inquiries or feedback, please contact:
 Feel free to adjust any section to better fit your project's details or specific requirements.
 
 
-
-admin@localhost.com
-user@localhost.com
-P@ssword1
+Email:admin@localhost.com
+Password:P@ssword1
+User: user@localhost.com
