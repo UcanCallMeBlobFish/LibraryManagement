@@ -1019,3 +1019,75 @@ FROM [BookOnShelves] AS [b]
 2024-08-11 02:55:03.038 +04:00 [INF] Executed action RestAPI.Controllers.BookOnShelfController.Get (RestAPI) in 41.2817ms
 2024-08-11 02:55:03.040 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.BookOnShelfController.Get (RestAPI)'
 2024-08-11 02:55:03.043 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/BookOnShelf - 200 null application/json; charset=utf-8 56.0113ms
+2024-08-11 02:55:43.650 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 02:55:43.887 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 02:55:43.889 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 02:55:43.892 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 02:55:43.893 +04:00 [INF] Hosting environment: Development
+2024-08-11 02:55:43.894 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 02:55:44.376 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 02:55:44.700 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 327.0624ms
+2024-08-11 02:55:44.749 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 02:55:44.759 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 02:55:44.761 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.5237ms
+2024-08-11 02:55:44.809 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.5497ms
+2024-08-11 02:55:44.979 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 02:55:45.193 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 213.6254ms
+2024-08-11 20:27:18.844 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 20:27:20.338 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 20:27:20.341 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 20:27:20.346 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 20:27:20.349 +04:00 [INF] Hosting environment: Development
+2024-08-11 20:27:20.354 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 20:27:21.888 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 20:27:22.534 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 647.3864ms
+2024-08-11 20:27:22.649 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 20:27:22.649 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 20:27:22.671 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 22.0926ms
+2024-08-11 20:27:23.020 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 371.2373ms
+2024-08-11 20:27:23.132 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 20:27:23.539 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 407.0677ms
+2024-08-11 20:27:50.413 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7295/api/Email - application/json 82
+2024-08-11 20:27:50.484 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.EmailController.SendEmail (RestAPI)'
+2024-08-11 20:27:50.530 +04:00 [INF] Route matched with {action = "SendEmail", controller = "Email"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(Application.Models.Email.EmailDto) on controller RestAPI.Controllers.EmailController (RestAPI).
+2024-08-11 20:27:51.523 +04:00 [INF] Executed action RestAPI.Controllers.EmailController.SendEmail (RestAPI) in 982.0847ms
+2024-08-11 20:27:51.529 +04:00 [INF] Executed endpoint 'RestAPI.Controllers.EmailController.SendEmail (RestAPI)'
+2024-08-11 20:27:51.532 +04:00 [ERR] exception occur
+System.ArgumentNullException: Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at Infrastructure.Services.Email.EmailService.SendEmail(EmailDto request) in C:\Users\Kiu-Student\Desktop\LibraryManagement\Infrastructure\Services\Email\EmailService.cs:line 29
+   at RestAPI.Controllers.EmailController.SendEmail(EmailDto request) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Controllers\EmailController.cs:line 22
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at RestAPI.Middleware.GlobalExceptionHandlingMiddleware.Invoke(HttpContext context) in C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI\Middleware\GlobalExceptionHandlingMiddleware.cs:line 22
+2024-08-11 20:27:51.945 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7295/api/Email - 400 null application/json 1531.1751ms
+2024-08-11 20:30:53.401 +04:00 [INF] User profile is available. Using 'C:\Users\Kiu-Student\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-08-11 20:30:54.548 +04:00 [INF] Now listening on: https://localhost:7295
+2024-08-11 20:30:54.553 +04:00 [INF] Now listening on: http://localhost:5123
+2024-08-11 20:30:54.561 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-11 20:30:54.564 +04:00 [INF] Hosting environment: Development
+2024-08-11 20:30:54.568 +04:00 [INF] Content root path: C:\Users\Kiu-Student\Desktop\LibraryManagement\RestAPI
+2024-08-11 20:30:56.529 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - null null
+2024-08-11 20:30:57.587 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-11 20:30:57.609 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - 200 null text/html;charset=utf-8 1091.4056ms
+2024-08-11 20:30:57.662 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 75.1667ms
+2024-08-11 20:30:57.674 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_vs/browserLink - null null
+2024-08-11 20:30:57.882 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_vs/browserLink - 200 null text/javascript; charset=UTF-8 208.0106ms
+2024-08-11 20:30:58.051 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - null null
+2024-08-11 20:30:58.547 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 495.8204ms
+2024-08-11 20:31:06.273 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7295/api/Email - application/json 82
+2024-08-11 20:31:06.484 +04:00 [INF] Executing endpoint 'RestAPI.Controllers.EmailController.SendEmail (RestAPI)'
+2024-08-11 20:31:06.564 +04:00 [INF] Route matched with {action = "SendEmail", controller = "Email"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendEmail(Application.Models.Email.EmailDto) on controller RestAPI.Controllers.EmailController (RestAPI).

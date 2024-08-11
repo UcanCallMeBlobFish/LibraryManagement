@@ -1,4 +1,5 @@
 ﻿using Application.Abstractions.Caching;
+using Application.Abstractions.Email;
 using Application.Abstractions.Identity;
 using Application.Abstractions.Library;
 using Application.Models.Identity.JWTModels;
@@ -8,10 +9,12 @@ using Infrastructure.IdentityData.Models;
 using Infrastructure.LibraryData;
 using Infrastructure.Repositories;
 using Infrastructure.Services.CachingServices.Redis;
+using Infrastructure.Services.Email;
 using Infrastructure.Services.IdentityServices;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -115,6 +118,9 @@ namespace Infrastructure
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddMediatR(Assembly.GetExecutingAssembly());
+
+            services.AddScoped<IEmailService, EmailService>();
+
             return services;
         }
     }
